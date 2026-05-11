@@ -106,7 +106,7 @@ if page == "Gyakorlás":
                 update_stats(entry["species"], correct)
                 st.rerun()
         else:
-            answer = st.selectbox("Fajnév:", [""] + all_species, index=0, key="practice_input", placeholder="Kezdj el gépelni...", accept_new_options=True)
+            answer = st.selectbox("Fajnév:", [""] + all_species, index=0, key="practice_input", placeholder="Kezdj el gépelni...")
             submitted = st.button("Ellenőrzés", key="practice_submit_txt")
             if submitted and answer:
                 correct = check_answer(answer, entry["species"])
@@ -170,7 +170,7 @@ elif page == "Vizsgaszimuláció":
                 choices = generate_choices(entry["species"], all_species)
                 species_answer = st.radio("Fajnév:", choices, index=None, key=f"exam_mc_{idx}")
             else:
-                species_answer = st.selectbox("Fajnév:", [""] + all_species, index=0, key=f"exam_input_{idx}", placeholder="Kezdj el gépelni...", accept_new_options=True)
+                species_answer = st.selectbox("Fajnév:", [""] + all_species, index=0, key=f"exam_input_{idx}", placeholder="Kezdj el gépelni...")
 
             trophy_age = None
             trophy_harvest = None
@@ -288,7 +288,7 @@ elif page == "Trófea gyakorlás":
                 species_answer = st.radio("Fajnév:", trophy_species_list, index=None, key="trophy_mc")
             else:
                 trophy_species_list = sorted(set(e["species"] for e in trophy_data_list))
-                species_answer = st.selectbox("Fajnév:", [""] + trophy_species_list, index=0, key="trophy_species_input", placeholder="Kezdj el gépelni...", accept_new_options=True)
+                species_answer = st.selectbox("Fajnév:", [""] + trophy_species_list, index=0, key="trophy_species_input", placeholder="Kezdj el gépelni...")
             age_answer = st.selectbox("Korcsoport:", ["fiatal", "középkorú", "öreg"], key="trophy_age_input")
             harvest_answer = st.selectbox("Elejthetőség:", ["lőhető", "kímélendő"], key="trophy_harvest_input")
             submitted = st.form_submit_button("Ellenőrzés")

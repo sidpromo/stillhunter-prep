@@ -1214,11 +1214,16 @@
     "filename": "111. Öreg, visszarakott gímszarvasbika.jpg",
     "species": "Gímszarvas",
     "category": "vadászható",
-    "subcategory": "nagyvad_tarvad",
+    "subcategory": "nagyvad_trófeás",
     "group": "emlős",
-    "is_trophy": false,
+    "is_trophy": true,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Öreg, visszarakott gímszarvasbika"
+    }
   },
   {
     "id": 112,
@@ -1289,11 +1294,16 @@
     "filename": "116. Középkorú gímszarvasbika agancstisztítás idején.jpg",
     "species": "Gímszarvas",
     "category": "vadászható",
-    "subcategory": "nagyvad_tarvad",
+    "subcategory": "nagyvad_trófeás",
     "group": "emlős",
-    "is_trophy": false,
+    "is_trophy": true,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Középkorú gímszarvasbika agancstisztítás idején (REVIEW)"
+    }
   },
   {
     "id": 117,
@@ -2132,11 +2142,16 @@
     "filename": "176. Erős, közepes ívű, golyóérett muflonkos.jpg",
     "species": "Muflon",
     "category": "vadászható",
-    "subcategory": "nagyvad_tarvad",
+    "subcategory": "nagyvad_trófeás",
     "group": "emlős",
-    "is_trophy": false,
+    "is_trophy": true,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "kos",
+      "description": "Erős, közepes ívű, golyóérett muflonkos"
+    }
   },
   {
     "id": 177,
@@ -2353,7 +2368,7 @@
     "filename": "192. Vadkan téli szőrben.jpg",
     "species": "Vaddisznó",
     "category": "vadászható",
-    "subcategory": "nagyvad_tarvad",
+    "subcategory": "nagyvad",
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
@@ -2375,7 +2390,7 @@
     "filename": "194. Vadkan nyári szőrben.jpg",
     "species": "Vaddisznó",
     "category": "vadászható",
-    "subcategory": "nagyvad_tarvad",
+    "subcategory": "nagyvad",
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
@@ -2386,7 +2401,7 @@
     "filename": "195. Vadkan téli szőrben.jpg",
     "species": "Vaddisznó",
     "category": "vadászható",
-    "subcategory": "nagyvad_tarvad",
+    "subcategory": "nagyvad",
     "group": "emlős",
     "is_trophy": false,
     "protection": null,

@@ -19,7 +19,7 @@ from utils.helpers import (
 
 IMAGES_DIR = os.path.join(os.path.dirname(__file__), "images")
 
-st.set_page_config(page_title="StillHunter Prep", page_icon="🦌", layout="centered")
+st.set_page_config(page_title="Vadászvizsga Képfelismerés", page_icon="🦌", layout="centered")
 
 
 @st.cache_data
@@ -53,7 +53,7 @@ def init_state():
 init_state()
 
 # --- Sidebar ---
-st.sidebar.title("🦌 StillHunter Prep")
+st.sidebar.title("🦌 Vadászvizsga Képfelismerés")
 page = st.sidebar.radio(
     "Navigáció",
     ["Gyakorlás", "Vizsgaszimuláció", "Trófea gyakorlás", "Tanulás", "Statisztika"],

@@ -88,7 +88,7 @@ def compose_exam(data: list[dict]) -> list[dict]:
     - 1 fokozottan védett (strictly protected)
     """
     trophy_pool = filter_by_subcategory(data, "nagyvad_trófeás")
-    tarvad_pool = filter_by_subcategory(data, "nagyvad_tarvad")
+    tarvad_pool = filter_by_subcategory(data, "nagyvad_tarvad") + filter_by_subcategory(data, "nagyvad")
     aprovad_pool = filter_by_subcategory(data, "apróvad")
     vedett_pool = [e for e in data if e["protection"] == "védett" or e["protection"] == "EU jelentős"]
     fok_vedett_pool = [e for e in data if e["protection"] == "fokozottan védett"]
@@ -160,7 +160,7 @@ def evaluate_exam(results: list[dict]) -> dict:
 
     Returns evaluation dict with pass/fail and breakdown.
     """
-    nagyvad_results = [r for r in results if r.get("subcategory") in ("nagyvad_trófeás", "nagyvad_tarvad")]
+    nagyvad_results = [r for r in results if r.get("subcategory") in ("nagyvad_trófeás", "nagyvad_tarvad", "nagyvad")]
     aprovad_results = [r for r in results if r.get("subcategory") == "apróvad"]
     vedett_results = [r for r in results if r.get("protection") in ("védett", "EU jelentős")]
     fok_vedett_results = [r for r in results if r.get("protection") == "fokozottan védett"]

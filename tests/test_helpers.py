@@ -105,13 +105,13 @@ def test_filter_by_category(species_data):
 
 def test_filter_by_subcategory(species_data):
     trophy = filter_by_subcategory(species_data, "nagyvad_trófeás")
-    assert len(trophy) == 54
+    assert len(trophy) == 57
     assert all(e["subcategory"] == "nagyvad_trófeás" for e in trophy)
 
 
 def test_filter_trophy(species_data):
     trophy = filter_trophy(species_data)
-    assert len(trophy) == 54
+    assert len(trophy) == 57
     assert all(e["is_trophy"] for e in trophy)
 
 

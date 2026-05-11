@@ -83,7 +83,7 @@ def extract_species(filename: str) -> str:
     species_map = {
         "gímszarvas": "Gímszarvas",
         "gím": "Gímszarvas",
-        "dám": "Dámszarvas",
+        "dám": "Dámvad",
         "őz": "Őz",
         "muflon": "Muflon",
         "vaddisznó": "Vaddisznó",

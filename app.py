@@ -56,8 +56,8 @@ init_state()
 st.sidebar.title("🦌 Vadászvizsga Képfelismerés")
 page = st.sidebar.radio(
     "Navigáció",
-    ["Gyakorlás", "Vizsgaszimuláció", "Trófea gyakorlás", "Tanulás", "Statisztika"],
-    index=["Gyakorlás", "Vizsgaszimuláció", "Trófea gyakorlás", "Tanulás", "Statisztika"].index(st.session_state["page"]),
+    ["Gyakorlás", "Vizsgaszimuláció", "Trófea gyakorlás", "Képek", "Statisztika"],
+    index=["Gyakorlás", "Vizsgaszimuláció", "Trófea gyakorlás", "Képek", "Statisztika"].index(st.session_state["page"]),
 )
 st.session_state["page"] = page
 
@@ -326,8 +326,8 @@ elif page == "Trófea gyakorlás":
 # ============================================================
 # TANULÁS (Study Mode)
 # ============================================================
-elif page == "Tanulás":
-    st.header("Tanulás")
+elif page == "Képek":
+    st.header("Képek")
     st.caption("Böngészd a fajokat kategória szerint.")
 
     # Filters

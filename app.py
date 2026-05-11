@@ -331,7 +331,7 @@ elif page == "Tanulás":
     st.caption("Böngészd a fajokat kategória szerint.")
 
     # Filters
-    cat_filter = st.selectbox("Kategória:", ["Mind", "Apróvad", "Nagyvad trófeás", "Nagyvad tarvad", "Védett", "Fokozottan védett", "Egyéb vadászható"])
+    cat_filter = st.selectbox("Kategória:", ["Mind", "Apróvad", "Nagyvad trófeás", "Nagyvad tarvad", "Védett", "Fokozottan védett"])
 
     filtered = data
     if cat_filter == "Apróvad":
@@ -344,8 +344,6 @@ elif page == "Tanulás":
         filtered = [e for e in filtered if e["protection"] in ("védett", "EU jelentős")]
     elif cat_filter == "Fokozottan védett":
         filtered = filter_by_category(filtered, "fokozottan védett")
-    elif cat_filter == "Egyéb vadászható":
-        filtered = filter_by_subcategory(filtered, "egyéb")
 
     st.write(f"**{len(filtered)} kép**")
 

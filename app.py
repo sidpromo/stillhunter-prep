@@ -180,6 +180,12 @@ elif page == "Vizsgaszimuláció":
                 trophy_age = st.selectbox("Korcsoport:", ["fiatal", "középkorú", "öreg"], key=f"exam_age_{idx}")
                 trophy_harvest = st.selectbox("Elejthetőség:", ["lőhető", "kímélendő"], key=f"exam_harvest_{idx}")
 
+            protection_answer = None
+            if entry.get("protection"):
+                st.divider()
+                st.caption("Védettségi besorolás:")
+                protection_answer = st.selectbox("Védettség:", ["védett", "fokozottan védett", "EU közösségi jelentőségű"], key=f"exam_prot_{idx}")
+
             submitted = st.form_submit_button("Tovább")
             if submitted:
                 species_correct = check_answer(species_answer or "", entry["species"])
@@ -191,6 +197,17 @@ elif page == "Vizsgaszimuláció":
                     harvest_ok = (trophy_harvest == "lőhető") == td["harvestable"]
                     trophy_correct = age_ok and harvest_ok
 
+                # Check protection level
+                protection_correct = None
+                if entry.get("protection"):
+                    expected_prot = entry["protection"]
+                    if expected_prot == "EU jelentős":
+                        protection_correct = protection_answer == "EU közösségi jelentőségű"
+                    elif expected_prot == "fokozottan védett":
+                        protection_correct = protection_answer == "fokozottan védett"
+                    else:
+                        protection_correct = protection_answer == "védett"
+
                 result = {
                     "id": entry["id"],
                     "filename": entry["filename"],
@@ -200,10 +217,12 @@ elif page == "Vizsgaszimuláció":
                     "is_trophy": entry["is_trophy"],
                     "species_correct": species_correct,
                     "trophy_correct": trophy_correct,
+                    "protection_correct": protection_correct,
                     "user_species": species_answer or "",
                     "correct_species": entry["species"],
                     "user_age": trophy_age,
                     "user_harvest": trophy_harvest,
+                    "user_protection": protection_answer,
                     "trophy_data": entry.get("trophy_data"),
                 }
                 st.session_state["exam_results"].append(result)
@@ -241,7 +260,13 @@ elif page == "Vizsgaszimuláció":
         st.divider()
         st.subheader("Részletes eredmények")
         for i, r in enumerate(results):
-            icon = "✅" if r["species_correct"] else "❌"
+            # Icon logic: ✅ all correct, ⚠️ species correct but trophy/protection wrong, ❌ species wrong
+            if not r["species_correct"]:
+                icon = "❌"
+            elif r.get("trophy_correct") is False or r.get("protection_correct") is False:
+                icon = "⚠️"
+            else:
+                icon = "✅"
             with st.expander(f"{i+1}. {icon} {r['correct_species']}"):
                 st.image(image_path(r["filename"]), width=300)
                 st.write(f"**Te válaszod:** {r['user_species']}")
@@ -253,6 +278,10 @@ elif page == "Vizsgaszimuláció":
                     harvest_icon = "✅" if r.get("user_harvest") == harvest_expected else "❌"
                     st.write(f"{age_icon} Korcsoport: {r.get('user_age', '—')} (helyes: {td['age_group']})")
                     st.write(f"{harvest_icon} Elejthetőség: {r.get('user_harvest', '—')} (helyes: {harvest_expected})")
+                if r.get("protection") and r.get("user_protection"):
+                    expected_prot = "EU közösségi jelentőségű" if r["protection"] == "EU jelentős" else r["protection"]
+                    prot_icon = "✅" if r.get("protection_correct") else "❌"
+                    st.write(f"{prot_icon} Védettség: {r.get('user_protection', '—')} (helyes: {expected_prot})")
 
         # Record in history
         st.session_state["exam_history"].append(evaluation["passed"])

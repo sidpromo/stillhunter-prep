@@ -151,15 +151,6 @@ def extract_species(filename: str) -> str:
     # (e.g., "Fiatal, villás bak, kímélendő" → Őz based on range 158-175)
     range_species = species_from_range(img_id)
     if range_species:
-        # Verify with contextual keywords
-        nagyvad_context = {
-            "Gímszarvas": ["bika", "tehén", "borj"],
-            "Dámszarvas": ["bika", "tehén", "borj", "ünő"],
-            "Őz": ["bak", "suta", "gida"],
-            "Muflon": ["kos", "juh", "jerke", "bárány"],
-            "Vaddisznó": ["kan", "koca", "süldő", "malac"],
-        }
-        # If any contextual keyword matches, or if no better match, use range
         return range_species
 
     # For simple names: take the first part before comma

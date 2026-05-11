@@ -166,9 +166,7 @@ def test_compose_exam_species_diversity(species_data):
 def test_compose_exam_randomness(species_data):
     """Two exams should not be identical."""
     exam1 = compose_exam(species_data)
-    exam2 = compose_exam(species_data)
     ids1 = [e["id"] for e in exam1]
-    ids2 = [e["id"] for e in exam2]
     # Very unlikely to be identical (but not impossible)
     # Run multiple times to reduce flakiness
     different = any(

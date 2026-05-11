@@ -9,7 +9,6 @@ from utils.helpers import (
     compose_exam,
     evaluate_exam,
     filter_by_category,
-    filter_by_group,
     filter_by_subcategory,
     filter_trophy,
     generate_choices,

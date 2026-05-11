@@ -1,0 +1,2450 @@
+[
+  {
+    "id": 1,
+    "filename": "1. Nagy lilik.jpg",
+    "species": "Nagy lilik",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 2,
+    "filename": "2. Nagy lilik.jpg",
+    "species": "Nagy lilik",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 3,
+    "filename": "3. Nagy lilik.jpg",
+    "species": "Nagy lilik",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 4,
+    "filename": "4. Vetési lúd.jpg",
+    "species": "Vetési lúd",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 5,
+    "filename": "5. Vetési lúd.jpg",
+    "species": "Vetési lúd",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 6,
+    "filename": "6. Vetési lúd.jpg",
+    "species": "Vetési lúd",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 7,
+    "filename": "7. Nyári lúd.jpg",
+    "species": "Nyári lúd",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 8,
+    "filename": "8. Nyári lúd.jpg",
+    "species": "Nyári lúd",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 9,
+    "filename": "9. Nyári lúd.jpg",
+    "species": "Nyári lúd",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 10,
+    "filename": "10. Nílusi lúd.jpg",
+    "species": "Nílusi lúd",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 11,
+    "filename": "11. Kanadai lúd.jpg",
+    "species": "Kanadai lúd",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 12,
+    "filename": "12. Tőkés réce, tojó.jpg",
+    "species": "Tőkés réce",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 13,
+    "filename": "13. Tőkés réce, gácsér.jpg",
+    "species": "Tőkés réce",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 14,
+    "filename": "14. Tőkés réce, gácsér.jpg",
+    "species": "Tőkés réce",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 15,
+    "filename": "15. Tőkésréce-család.jpg",
+    "species": "Tőkés réce",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 16,
+    "filename": "16. Tőkés réce, fiatal.jpg",
+    "species": "Tőkés réce",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 17,
+    "filename": "17. Fogoly.jpg",
+    "species": "Fogoly",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 18,
+    "filename": "18. Fogoly.jpg",
+    "species": "Fogoly",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 19,
+    "filename": "19. Fogolycsibe.jpg",
+    "species": "Fogoly",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 20,
+    "filename": "20. Fogoly.jpg",
+    "species": "Fogoly",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 21,
+    "filename": "21. Fácánkakas, fácántyúk.jpg",
+    "species": "Fácán",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 22,
+    "filename": "22. Fácántyúk.jpg",
+    "species": "Fácán",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 23,
+    "filename": "23. Fácánkakas.jpg",
+    "species": "Fácán",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 24,
+    "filename": "24. Fácáncsibe.jpg",
+    "species": "Fácán",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 25,
+    "filename": "25. Szárcsa.jpg",
+    "species": "Szárcsa",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 26,
+    "filename": "26. Örvös galamb.jpg",
+    "species": "Örvös galamb",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 27,
+    "filename": "27. Balkáni gerle.jpg",
+    "species": "Balkáni gerle",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 28,
+    "filename": "28. Dolmányos varjú.jpg",
+    "species": "Dolmányos varjú",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 29,
+    "filename": "29. Erdei szalonka.jpg",
+    "species": "Erdei szalonka",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 30,
+    "filename": "30. Szarka.jpg",
+    "species": "Szarka",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 31,
+    "filename": "31. Szajkó.jpg",
+    "species": "Szajkó",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "madár",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 32,
+    "filename": "32. Mezei nyúl.jpg",
+    "species": "Mezei nyúl",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 33,
+    "filename": "33. Üregi nyúl.jpg",
+    "species": "Üregi nyúl",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 34,
+    "filename": "34. Üregi nyúl.jpg",
+    "species": "Üregi nyúl",
+    "category": "vadászható",
+    "subcategory": "apróvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 35,
+    "filename": "35. Pézsmapocok.jpg",
+    "species": "Pézsmapocok",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 36,
+    "filename": "36. Aranysakál.jpg",
+    "species": "Aranysakál",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 37,
+    "filename": "37. Róka.jpg",
+    "species": "Róka",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 38,
+    "filename": "38. Nyestkutya.jpg",
+    "species": "Nyestkutya",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 39,
+    "filename": "39. Mosómedve.jpg",
+    "species": "Mosómedve",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 40,
+    "filename": "40. Borz.jpg",
+    "species": "Borz",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 41,
+    "filename": "41. Nyest.jpg",
+    "species": "Nyest",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 42,
+    "filename": "42. Házi görény.jpg",
+    "species": "Házi görény",
+    "category": "vadászható",
+    "subcategory": "egyéb",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 43,
+    "filename": "43. Szikaszarvas.jpg",
+    "species": "Szikaszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 44,
+    "filename": "44. Zerge - jogszabály változás alapján védett faj.jpg",
+    "species": "Zerge",
+    "category": "védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 45,
+    "filename": "45. Kis lilik - Fokozottan védett.jpg",
+    "species": "Kis lilik",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 46,
+    "filename": "46. Kis lilik - Fokozottan védett.jpg",
+    "species": "Kis lilik",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 47,
+    "filename": "47. Vörösnyakú lúd - Fokozottan védett.jpg",
+    "species": "Vörösnyakú lúd",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 48,
+    "filename": "48. Csörgőréce-pár - Védett.jpg",
+    "species": "Csörgő réce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 49,
+    "filename": "49. Csörgő réce, gácsér - Védett.jpg",
+    "species": "Csörgő réce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 50,
+    "filename": "50. Fütyülő réce, gácsér - Védett.jpg",
+    "species": "Fütyülő réce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 51,
+    "filename": "51. Kendermagos réce, gácsér - Védett.jpg",
+    "species": "Kendermagos réce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 52,
+    "filename": "52. Böjti réce, gácsér - Fokozottan védett.jpg",
+    "species": "Böjti réce",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 53,
+    "filename": "53. Böjti réce, gácsér - Fokozottan védett.jpg",
+    "species": "Böjti réce",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 54,
+    "filename": "54. Kanalas réce, gácsér - Védett.jpg",
+    "species": "Kanalas réce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 55,
+    "filename": "55. Kanalas réce, tojó - Védett.jpg",
+    "species": "Kanalas réce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 56,
+    "filename": "56. Barátréce, gácsér - Védett.jpg",
+    "species": "Barátréce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 57,
+    "filename": "57. Barátrécék - Védett.jpg",
+    "species": "Barátréce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 58,
+    "filename": "58. Kerceréce pár - Védett.jpg",
+    "species": "Kerceréce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 59,
+    "filename": "59. Nyílfarkú réce, gácsér - Védett.jpg",
+    "species": "Nyílfarkú réce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 60,
+    "filename": "60. Cigányréce, gácsér - Fokozottan védett.jpg",
+    "species": "Cigányréce",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 61,
+    "filename": "61. Üstökös réce pár - Védett.jpg",
+    "species": "Üstökös réce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 62,
+    "filename": "62. Kontyos réce, gácsér - Védett.jpg",
+    "species": "Kontyos réce",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 63,
+    "filename": "63. Kis bukó - Védett.jpg",
+    "species": "Kis bukó",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 64,
+    "filename": "64. Kárókatona - Európai közösségben természetvédelmi szempontból jelentős faj.jpg",
+    "species": "Kárókatona",
+    "category": "EU jelentős",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "EU jelentős",
+    "trophy_data": null
+  },
+  {
+    "id": 65,
+    "filename": "65. Kis kárókatona - Fokozottan védett.jpg",
+    "species": "Kis kárókatona",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 66,
+    "filename": "66. Fürj - Védett.jpg",
+    "species": "Fürj",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 67,
+    "filename": "67. Szürke gém - Védett.jpg",
+    "species": "Szürke gém",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 68,
+    "filename": "68. Császármadár - Fokozottan védett.jpg",
+    "species": "Császármadár",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 69,
+    "filename": "69. Héja - Védett.jpg",
+    "species": "Héja",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 70,
+    "filename": "70. Barna kánya - Fokozottan védett.jpg",
+    "species": "Barna kánya",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 71,
+    "filename": "71. Vörös kánya - Fokozottan védett.jpg",
+    "species": "Vörös kánya",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 72,
+    "filename": "72. Hamvas rétihéja - Fokozottan védett.jpg",
+    "species": "Hamvas rétihéja",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 73,
+    "filename": "73. Kékes rétihéja - Védett.jpg",
+    "species": "Kékes rétihéja",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 74,
+    "filename": "74. Barna rétihéja, hím - Védett.jpg",
+    "species": "Barna rétihéja",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 75,
+    "filename": "75. Barna rétihéja, tojó - Védett.jpg",
+    "species": "Barna rétihéja",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 76,
+    "filename": "76. Rétisas - Fokozottan védett.jpg",
+    "species": "Rétisas",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 77,
+    "filename": "77. Rétisas - Fokozottan védett.jpg",
+    "species": "Rétisas",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 78,
+    "filename": "78. Szirti sas - Fokozottan védett.jpg",
+    "species": "Szirti sas",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 79,
+    "filename": "79. Parlagi sas - Fokozottan védett.jpg",
+    "species": "Parlagi sas",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 80,
+    "filename": "80. Gatyás ölyv - Védett.jpg",
+    "species": "Gatyás ölyv",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 81,
+    "filename": "81. Egerészölyv - Védett.jpg",
+    "species": "Egerészölyv",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 82,
+    "filename": "82. Vörös vércse - Védett.jpg",
+    "species": "Vörös vércse",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 83,
+    "filename": "83. Kék vércse hím - Fokozottan védett.jpg",
+    "species": "Kék vércse",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 84,
+    "filename": "84. Karvaly - Védett.jpg",
+    "species": "Karvaly",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 85,
+    "filename": "85. Karvaly, tojó - Védett.jpg",
+    "species": "Karvaly",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 86,
+    "filename": "86. Kerecsensólyom - Fokozottan védett.jpg",
+    "species": "Kerecsensólyom",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 87,
+    "filename": "87. Vándorsólyom - Fokozottan védett.jpg",
+    "species": "Vándorsólyom",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 88,
+    "filename": "88. Sárszalonka - Fokozottan védett.jpg",
+    "species": "Sárszalonka",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 89,
+    "filename": "89. Nagy sárszalonka - Fokozottan védett.jpg",
+    "species": "Nagy sárszalonka",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 90,
+    "filename": "90. Uhu - Fokozottan védett.jpg",
+    "species": "Uhu",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 91,
+    "filename": "91. Erdei fülesbagoly - Védett.jpg",
+    "species": "Erdei fülesbagoly",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 92,
+    "filename": "92. Vadgerle - Védett.jpg",
+    "species": "Vadgerle",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 93,
+    "filename": "93. Kék galamb - Védett.jpg",
+    "species": "Kék galamb",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 94,
+    "filename": "94. Daru - Védett.jpg",
+    "species": "Daru",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 95,
+    "filename": "95. Túzok kakas - Fokozottan védett.jpg",
+    "species": "Túzok",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 96,
+    "filename": "96. Vetési varjú - Védett.jpg",
+    "species": "Vetési varjú",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 97,
+    "filename": "97. Holló - Védett.jpg",
+    "species": "Holló",
+    "category": "védett",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 98,
+    "filename": "98. Seregély - Európai közösségben természetvédelmi szempontból jelentős faj.jpg",
+    "species": "Seregély",
+    "category": "EU jelentős",
+    "subcategory": null,
+    "group": "madár",
+    "is_trophy": false,
+    "protection": "EU jelentős",
+    "trophy_data": null
+  },
+  {
+    "id": 99,
+    "filename": "99. Vadmacska - Fokozottan védett.jpg",
+    "species": "Vadmacska",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 100,
+    "filename": "100. Közönséges hiúz - Fokozottan védett.jpg",
+    "species": "Közönséges hiúz",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 101,
+    "filename": "101. Szürke farkas - Fokozottan védett.jpg",
+    "species": "Szürke farkas",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 102,
+    "filename": "102. Hermelin nyári bundában - Védett.jpg",
+    "species": "Hermelin",
+    "category": "védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 103,
+    "filename": "103. Hermelin téli bundában - Védett.jpg",
+    "species": "Hermelin",
+    "category": "védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 104,
+    "filename": "104. Molnárgörény - Védett.jpg",
+    "species": "Molnárgörény",
+    "category": "védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 105,
+    "filename": "105. Eurázsiai menyét - Védett.jpg",
+    "species": "Eurázsiai menyét",
+    "category": "védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 106,
+    "filename": "106. Ürge - Fokozottan védett.jpg",
+    "species": "Ürge",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 107,
+    "filename": "107. Közönséges vidra - Fokozottan védett.jpg",
+    "species": "Közönséges vidra",
+    "category": "fokozottan védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "fokozottan védett",
+    "trophy_data": null
+  },
+  {
+    "id": 108,
+    "filename": "108. Nyuszt - Védett.jpg",
+    "species": "Nyuszt",
+    "category": "védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 109,
+    "filename": "109. Eurázsiai hód - Védett.jpg",
+    "species": "Eurázsiai hód",
+    "category": "védett",
+    "subcategory": null,
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": "védett",
+    "trophy_data": null
+  },
+  {
+    "id": 110,
+    "filename": "110. Gímszarvastarvad-csapat a vezértehén (balról) vezetésével.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 111,
+    "filename": "111. Öreg, visszarakott gímszarvasbika.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 112,
+    "filename": "112. Erős csapos gímszarvasbika, kímélendő.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Erős csapos gímszarvasbika, kímélendő"
+    }
+  },
+  {
+    "id": 113,
+    "filename": "113. Kímélendő fiatal (2. agancsú), villás gímszarvasbika.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Kímélendő fiatal (2. agancsú), villás gímszarvasbika"
+    }
+  },
+  {
+    "id": 114,
+    "filename": "114. Középkorú, barkás gímszarvasbika, kímélendő.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Középkorú, barkás gímszarvasbika, kímélendő"
+    }
+  },
+  {
+    "id": 115,
+    "filename": "115. Középkorú, lőhető, villás gímszarvasbika.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Középkorú, lőhető, villás gímszarvasbika"
+    }
+  },
+  {
+    "id": 116,
+    "filename": "116. Középkorú gímszarvasbika agancstisztítás idején.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 117,
+    "filename": "117. Középkorú gímszarvasbika, kímélendő.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Középkorú gímszarvasbika, kímélendő"
+    }
+  },
+  {
+    "id": 118,
+    "filename": "118. Öreg, visszarakott gímszarvasbika, lőhető.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Öreg, visszarakott gímszarvasbika, lőhető"
+    }
+  },
+  {
+    "id": 119,
+    "filename": "119. Fiatal, selejt gímszarvasbika, lőhető.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Fiatal, selejt gímszarvasbika, lőhető"
+    }
+  },
+  {
+    "id": 120,
+    "filename": "120. Gímszarvastehén a borjával.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 121,
+    "filename": "121. Öreg gímszarvasbika, lőhető.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Öreg gímszarvasbika, lőhető"
+    }
+  },
+  {
+    "id": 122,
+    "filename": "122. Golyóérett gímszarvasbika, lőhető.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Golyóérett gímszarvasbika, lőhető"
+    }
+  },
+  {
+    "id": 123,
+    "filename": "123. Középkor végén járó gímszarvasbika, lőhető.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Középkor végén járó gímszarvasbika, lőhető"
+    }
+  },
+  {
+    "id": 124,
+    "filename": "124. Fiatal, jobb száron dárdás gímszarvasbika, lőhető.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Fiatal, jobb száron dárdás gímszarvasbika, lőhető"
+    }
+  },
+  {
+    "id": 125,
+    "filename": "125. Gímszarvastehén borjakkal.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 126,
+    "filename": "126. Fiatal gímszarvasbika, kímélendő.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Fiatal gímszarvasbika, kímélendő"
+    }
+  },
+  {
+    "id": 127,
+    "filename": "127. Középkorú selejt gímszarvabika, lőhető.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Középkorú selejt gímszarvabika, lőhető"
+    }
+  },
+  {
+    "id": 128,
+    "filename": "128. 2. agancsú gímszarvasbika, kímélendő.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "2. agancsú gímszarvasbika, kímélendő"
+    }
+  },
+  {
+    "id": 129,
+    "filename": "129. Középkorú gímszarvasbika, kímélendő.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Középkorú gímszarvasbika, kímélendő"
+    }
+  },
+  {
+    "id": 130,
+    "filename": "130. Középkorú, selejt gímszarvasbika, lőhető.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Középkorú, selejt gímszarvasbika, lőhető"
+    }
+  },
+  {
+    "id": 131,
+    "filename": "131. Középkorú gímszarvasbika, kímélendő.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Középkorú gímszarvasbika, kímélendő"
+    }
+  },
+  {
+    "id": 132,
+    "filename": "132. Öreg gímszarvasbika, lőhető.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Öreg gímszarvasbika, lőhető"
+    }
+  },
+  {
+    "id": 133,
+    "filename": "133. Középkorú, szűk állású, villás selejt gímszarvasbika, lőhető.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Középkorú, szűk állású, villás selejt gímszarvasbika, lőhető"
+    }
+  },
+  {
+    "id": 134,
+    "filename": "134. Csapos gímszarvasbika, kímélendő.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Csapos gímszarvasbika, kímélendő"
+    }
+  },
+  {
+    "id": 135,
+    "filename": "135. Középkor elején járó, kímélendő gímszarvasbika.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Középkor elején járó, kímélendő gímszarvasbika"
+    }
+  },
+  {
+    "id": 136,
+    "filename": "136. Gímtehén borjúval.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 137,
+    "filename": "137. Gímborjú.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 138,
+    "filename": "138. Gímtehenek téli szőrben.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 139,
+    "filename": "139. Gímtehén nyári szőrben.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 140,
+    "filename": "140. Gímborjú.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 141,
+    "filename": "141. Gímtehén.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 142,
+    "filename": "142. Gímtehenek borjaikkal.jpg",
+    "species": "Gímszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 143,
+    "filename": "143. Dámtehén, ünővel és borjúval.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 144,
+    "filename": "144. Dámtehén a borjával.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 145,
+    "filename": "145. Golyóérett dámbika, lőhető.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Golyóérett dámbika, lőhető"
+    }
+  },
+  {
+    "id": 146,
+    "filename": "146. Középkorú dámbika, kímélendő.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Középkorú dámbika, kímélendő"
+    }
+  },
+  {
+    "id": 147,
+    "filename": "147. Középkorú dámbika, kímélendő.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Középkorú dámbika, kímélendő"
+    }
+  },
+  {
+    "id": 148,
+    "filename": "148. Hasadt lapátú középkorú dámbika, lőhető.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Hasadt lapátú középkorú dámbika, lőhető"
+    }
+  },
+  {
+    "id": 149,
+    "filename": "149. Középkorú dámbika, kímélendő.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Középkorú dámbika, kímélendő"
+    }
+  },
+  {
+    "id": 150,
+    "filename": "150. Középkorú dámbika hasadó lapáttal, lőhető.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Középkorú dámbika hasadó lapáttal, lőhető"
+    }
+  },
+  {
+    "id": 151,
+    "filename": "151. Fiatal, kanalas dámbika, kímélendő.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Fiatal, kanalas dámbika, kímélendő"
+    }
+  },
+  {
+    "id": 152,
+    "filename": "152. Öreg dámbika, lőhető.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Öreg dámbika, lőhető"
+    }
+  },
+  {
+    "id": 153,
+    "filename": "153. Erősen visszarakott dámbika, lőhető.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Erősen visszarakott dámbika, lőhető"
+    }
+  },
+  {
+    "id": 154,
+    "filename": "154. Öreg dámbika, lőhető.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bika",
+      "description": "Öreg dámbika, lőhető"
+    }
+  },
+  {
+    "id": 155,
+    "filename": "155. Csapos és egy fiatalkorú dámbika, kímélendők.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Csapos és egy fiatalkorú dámbika, kímélendők"
+    }
+  },
+  {
+    "id": 156,
+    "filename": "156. Dámtehén borjakkal.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 157,
+    "filename": "157. Erős csapos bika, kímélendő.jpg",
+    "species": "Dámszarvas",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "bika",
+      "description": "Erős csapos bika, kímélendő"
+    }
+  },
+  {
+    "id": 158,
+    "filename": "158. Középkorú barkás őzbak, kímélendő.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bak",
+      "description": "Középkorú barkás őzbak, kímélendő"
+    }
+  },
+  {
+    "id": 160,
+    "filename": "160. Középkorú, selejt őzbak, lőhető (sutával).jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bak",
+      "description": "Középkorú, selejt őzbak, lőhető (sutával)"
+    }
+  },
+  {
+    "id": 161,
+    "filename": "161. Középkorú hatos őzbak, kímélendő.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bak",
+      "description": "Középkorú hatos őzbak, kímélendő"
+    }
+  },
+  {
+    "id": 163,
+    "filename": "163. Őzsuta néhány napos gidájával.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 164,
+    "filename": "164. Öreg, selejt őzbak, lőhető.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bak",
+      "description": "Öreg, selejt őzbak, lőhető"
+    }
+  },
+  {
+    "id": 165,
+    "filename": "165. Fiatal, gombnyársas őzbak, lőhető.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": true,
+      "animal_type": "bak",
+      "description": "Fiatal, gombnyársas őzbak, lőhető"
+    }
+  },
+  {
+    "id": 166,
+    "filename": "166. Érett agancsú hatos őzbak, lőhető.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bak",
+      "description": "Érett agancsú hatos őzbak, lőhető"
+    }
+  },
+  {
+    "id": 167,
+    "filename": "167. Fiatal őzbak, kímélendő.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "bak",
+      "description": "Fiatal őzbak, kímélendő"
+    }
+  },
+  {
+    "id": 168,
+    "filename": "168. Jó képességű középkorú őzbak, kímélendő.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "bak",
+      "description": "Jó képességű középkorú őzbak, kímélendő"
+    }
+  },
+  {
+    "id": 169,
+    "filename": "169. Öreg, rendellenes agancsú őzbak, lőhető.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "bak",
+      "description": "Öreg, rendellenes agancsú őzbak, lőhető"
+    }
+  },
+  {
+    "id": 170,
+    "filename": "170. Selejt őzbak, lőhető.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bak",
+      "description": "Selejt őzbak, lőhető"
+    }
+  },
+  {
+    "id": 171,
+    "filename": "171. Fiatal, villás bak, kímélendő.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "bak",
+      "description": "Fiatal, villás bak, kímélendő"
+    }
+  },
+  {
+    "id": 172,
+    "filename": "172. Középkorú, lőhető őzbak.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "bak",
+      "description": "Középkorú, lőhető őzbak"
+    }
+  },
+  {
+    "id": 173,
+    "filename": "173. Suta bakkal, téli szőrben.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 174,
+    "filename": "174. Suta (tavaszi) szőrváltásban.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 175,
+    "filename": "175. Őzgida.jpg",
+    "species": "Őz",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 176,
+    "filename": "176. Erős, közepes ívű, golyóérett muflonkos.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 177,
+    "filename": "177. Középkorú, kímélendő muflonkos.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "kos",
+      "description": "Középkorú, kímélendő muflonkos"
+    }
+  },
+  {
+    "id": 178,
+    "filename": "178. Fiatal, lőhető selejt kos, nyakba növő csigával.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": true,
+      "animal_type": "kos",
+      "description": "Fiatal, lőhető selejt kos, nyakba növő csigával"
+    }
+  },
+  {
+    "id": 179,
+    "filename": "179. Középkorú, kímélendő muflonkos.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "kos",
+      "description": "Középkorú, kímélendő muflonkos"
+    }
+  },
+  {
+    "id": 180,
+    "filename": "180. Szarvalt juh.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 181,
+    "filename": "181. Áll alá növő, középkorú selejt muflonkos, lőhető.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": true,
+      "animal_type": "kos",
+      "description": "Áll alá növő, középkorú selejt muflonkos, lőhető"
+    }
+  },
+  {
+    "id": 182,
+    "filename": "182. Középkorú muflonkos (nagy ívű), kímélendő.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "kos",
+      "description": "Középkorú muflonkos (nagy ívű), kímélendő"
+    }
+  },
+  {
+    "id": 183,
+    "filename": "183. Golyóérett muflonkos (bal oldali), lőhető.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "öreg",
+      "harvestable": true,
+      "animal_type": "kos",
+      "description": "Golyóérett muflonkos (bal oldali), lőhető"
+    }
+  },
+  {
+    "id": 184,
+    "filename": "184. Fiatal muflonkosok egy év különbséggel, kímélendők.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "fiatal",
+      "harvestable": false,
+      "animal_type": "kos",
+      "description": "Fiatal muflonkosok egy év különbséggel, kímélendők"
+    }
+  },
+  {
+    "id": 185,
+    "filename": "185. Jó képességű, középkorú kos, kímélendő.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "kos",
+      "description": "Jó képességű, középkorú kos, kímélendő"
+    }
+  },
+  {
+    "id": 186,
+    "filename": "186. Középkorú muflonkos, kímélendő.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_trófeás",
+    "group": "emlős",
+    "is_trophy": true,
+    "protection": null,
+    "trophy_data": {
+      "age_group": "középkorú",
+      "harvestable": false,
+      "animal_type": "kos",
+      "description": "Középkorú muflonkos, kímélendő"
+    }
+  },
+  {
+    "id": 187,
+    "filename": "187. Muflonjuh, jerke, bárány és szarvalt juh.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 188,
+    "filename": "188. Kosbárány.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 189,
+    "filename": "189. Muflonbárány.jpg",
+    "species": "Muflon",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 190,
+    "filename": "190. Vaddisznó koca malacaival.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 191,
+    "filename": "191. Vaddisznó koca süldőkkel.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 192,
+    "filename": "192. Vadkan téli szőrben.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 193,
+    "filename": "193. Öreg vaddisznó koca vedlés előtt.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 194,
+    "filename": "194. Vadkan nyári szőrben.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 195,
+    "filename": "195. Vadkan téli szőrben.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 196,
+    "filename": "196. Vaddisznó süldők.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 197,
+    "filename": "197. Vadmalacok.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 198,
+    "filename": "198. Vaddisznó koca.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 199,
+    "filename": "199. Vaddisznó süldők.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  },
+  {
+    "id": 200,
+    "filename": "200. Vaddisznó koca malaccal, süldőkkel.jpg",
+    "species": "Vaddisznó",
+    "category": "vadászható",
+    "subcategory": "nagyvad_tarvad",
+    "group": "emlős",
+    "is_trophy": false,
+    "protection": null,
+    "trophy_data": null
+  }
+]

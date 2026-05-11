@@ -32,26 +32,6 @@ def get_all_species():
     return get_species_list(get_data())
 
 
-@st.cache_data
-def get_species_options():
-    """Build selectbox options with accent-free aliases for fuzzy matching."""
-    species = get_species_list(get_data())
-    from utils.helpers import strip_accents
-    options = []
-    for s in species:
-        stripped = strip_accents(s).lower()
-        if stripped != s.lower():
-            options.append(f"{s} | {stripped}")
-        else:
-            options.append(s)
-    return options
-
-
-def format_species(option: str) -> str:
-    """Display only the accented species name."""
-    return option.split(" | ")[0] if option else ""
-
-
 def image_path(filename: str) -> str:
     return os.path.join(IMAGES_DIR, filename)
 
@@ -85,7 +65,6 @@ multiple_choice = st.sidebar.checkbox("Feleletválasztós mód", value=False)
 
 data = get_data()
 all_species = get_all_species()
-species_options = get_species_options()
 
 
 # --- Helper: update stats ---
@@ -127,8 +106,7 @@ if page == "Gyakorlás":
                 update_stats(entry["species"], correct)
                 st.rerun()
         else:
-            raw_answer = st.selectbox("Fajnév:", [""] + species_options, index=0, key="practice_input", placeholder="Kezdj el gépelni...", format_func=format_species)
-            answer = format_species(raw_answer)
+            answer = st.selectbox("Fajnév:", [""] + all_species, index=0, key="practice_input", placeholder="Kezdj el gépelni...")
             submitted = st.button("Ellenőrzés", key="practice_submit_txt")
             if submitted and answer:
                 correct = check_answer(answer, entry["species"])
@@ -192,8 +170,7 @@ elif page == "Vizsgaszimuláció":
                 choices = generate_choices(entry["species"], all_species)
                 species_answer = st.radio("Fajnév:", choices, index=None, key=f"exam_mc_{idx}")
             else:
-                species_answer = st.selectbox("Fajnév:", [""] + species_options, index=0, key=f"exam_input_{idx}", placeholder="Kezdj el gépelni...", format_func=format_species)
-                species_answer = format_species(species_answer)
+                species_answer = st.selectbox("Fajnév:", [""] + all_species, index=0, key=f"exam_input_{idx}", placeholder="Kezdj el gépelni...")
 
             trophy_age = None
             trophy_harvest = None
@@ -311,13 +288,7 @@ elif page == "Trófea gyakorlás":
                 species_answer = st.radio("Fajnév:", trophy_species_list, index=None, key="trophy_mc")
             else:
                 trophy_species_list = sorted(set(e["species"] for e in trophy_data_list))
-                from utils.helpers import strip_accents
-                trophy_options = []
-                for s in trophy_species_list:
-                    stripped = strip_accents(s).lower()
-                    trophy_options.append(f"{s} | {stripped}" if stripped != s.lower() else s)
-                species_answer = st.selectbox("Fajnév:", [""] + trophy_options, index=0, key="trophy_species_input", placeholder="Kezdj el gépelni...", format_func=format_species)
-                species_answer = format_species(species_answer)
+                species_answer = st.selectbox("Fajnév:", [""] + trophy_species_list, index=0, key="trophy_species_input", placeholder="Kezdj el gépelni...")
             age_answer = st.selectbox("Korcsoport:", ["fiatal", "középkorú", "öreg"], key="trophy_age_input")
             harvest_answer = st.selectbox("Elejthetőség:", ["lőhető", "kímélendő"], key="trophy_harvest_input")
             submitted = st.form_submit_button("Ellenőrzés")

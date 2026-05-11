@@ -141,7 +141,7 @@ def test_compose_exam_returns_15(species_data):
 def test_compose_exam_correct_distribution(species_data):
     exam = compose_exam(species_data)
     trophy = [e for e in exam if e["subcategory"] == "nagyvad_trófeás"]
-    tarvad = [e for e in exam if e["subcategory"] == "nagyvad_tarvad"]
+    tarvad = [e for e in exam if e["subcategory"] in ("nagyvad_tarvad", "nagyvad")]
     aprovad = [e for e in exam if e["subcategory"] == "apróvad"]
     vedett = [e for e in exam if e["protection"] in ("védett", "EU jelentős")]
     fok_vedett = [e for e in exam if e["protection"] == "fokozottan védett"]

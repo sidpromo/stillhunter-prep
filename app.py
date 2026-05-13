@@ -150,7 +150,7 @@ if page == "Gyakorlás":
 
         at_result = st.session_state.get("practice_at_result")
         if at_result is True:
-            st.success(f"✅ Megnevezés helyes!")
+            st.success("✅ Megnevezés helyes!")
         elif at_result is False:
             correct_types = ", ".join(entry["trophy_data"]["animal_type"])
             st.error(f"❌ Megnevezés helytelen! Helyes: **{correct_types}**")

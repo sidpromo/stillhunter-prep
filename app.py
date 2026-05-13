@@ -440,23 +440,22 @@ elif page == "Képek":
 
     st.write(f"**{len(filtered)} kép**")
 
-    # Display as grid with loading indicator
-    with st.spinner("Képek betöltése..."):
-        cols_per_row = 3
-        for i in range(0, len(filtered), cols_per_row):
-            cols = st.columns(cols_per_row)
-            for j, col in enumerate(cols):
-                if i + j < len(filtered):
-                    entry = filtered[i + j]
-                    with col:
-                        st.image(image_path(entry["filename"]), use_container_width=True)
-                        st.caption(f"**{entry['species']}**")
-                        if entry.get("protection"):
-                            st.caption(f"🛡️ {entry['protection']}")
-                        if entry.get("trophy_data") and entry["trophy_data"].get("harvestable") is not None:
-                            td = entry["trophy_data"]
-                            harvest = "lőhető" if td["harvestable"] else "kímélendő"
-                            st.caption(f"🏆 {td['age_group']} / {harvest}")
+    # Display as grid
+    cols_per_row = 3
+    for i in range(0, len(filtered), cols_per_row):
+        cols = st.columns(cols_per_row)
+        for j, col in enumerate(cols):
+            if i + j < len(filtered):
+                entry = filtered[i + j]
+                with col:
+                    st.image(image_path(entry["filename"]), use_container_width=True)
+                    st.caption(f"**{entry['species']}**")
+                    if entry.get("protection"):
+                        st.caption(f"🛡️ {entry['protection']}")
+                    if entry.get("trophy_data") and entry["trophy_data"].get("harvestable") is not None:
+                        td = entry["trophy_data"]
+                        harvest = "lőhető" if td["harvestable"] else "kímélendő"
+                        st.caption(f"🏆 {td['age_group']} / {harvest}")
 
 
 # ============================================================

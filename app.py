@@ -35,6 +35,21 @@ def image_path(filename: str) -> str:
     return os.path.join(IMAGES_DIR, filename)
 
 
+# Animal type options per species
+ANIMAL_TYPE_OPTIONS = {
+    "Gímszarvas": ["bika", "tehén", "borjú"],
+    "Dámvad": ["bika", "tehén", "borjú"],
+    "Őz": ["bak", "suta", "gida"],
+    "Muflon": ["kos", "juh", "jerke", "bárány"],
+    "Vaddisznó": ["kan", "koca", "süldő", "malac"],
+}
+
+
+def check_animal_type(user_answer: str, correct_types: list) -> bool:
+    """Check if user's animal type answer matches any of the correct types."""
+    return user_answer in correct_types
+
+
 # --- Session state init ---
 def init_state():
     defaults = {
@@ -97,20 +112,34 @@ if page == "Gyakorlás":
         if multiple_choice:
             choices = generate_choices(entry["species"], all_species)
             answer = st.radio("Válassz:", choices, index=None, key="practice_mc")
+            animal_type_answer = None
+            if entry["species"] in ANIMAL_TYPE_OPTIONS and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
+                animal_type_answer = st.selectbox("Megnevezés:", [""] + ANIMAL_TYPE_OPTIONS[entry["species"]], index=0, key="practice_at_mc")
             submitted = st.button("Ellenőrzés", key="practice_submit")
             if submitted and answer:
                 correct = check_answer(answer, entry["species"])
+                at_correct = None
+                if animal_type_answer and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
+                    at_correct = check_animal_type(animal_type_answer, entry["trophy_data"]["animal_type"])
                 st.session_state["practice_answered"] = True
                 st.session_state["practice_result"] = correct
+                st.session_state["practice_at_result"] = at_correct
                 update_stats(entry["species"], correct)
                 st.rerun()
         else:
             answer = st.selectbox("Fajnév:", [""] + all_species, index=0, key="practice_input", placeholder="Kezdj el gépelni...")
+            animal_type_answer = None
+            if entry["species"] in ANIMAL_TYPE_OPTIONS and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
+                animal_type_answer = st.selectbox("Megnevezés:", [""] + ANIMAL_TYPE_OPTIONS[entry["species"]], index=0, key="practice_at_input")
             submitted = st.button("Ellenőrzés", key="practice_submit_txt")
             if submitted and answer:
                 correct = check_answer(answer, entry["species"])
+                at_correct = None
+                if animal_type_answer and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
+                    at_correct = check_animal_type(animal_type_answer, entry["trophy_data"]["animal_type"])
                 st.session_state["practice_answered"] = True
                 st.session_state["practice_result"] = correct
+                st.session_state["practice_at_result"] = at_correct
                 update_stats(entry["species"], correct)
                 st.rerun()
     else:
@@ -119,6 +148,13 @@ if page == "Gyakorlás":
         else:
             st.error(f"❌ Helytelen! A helyes válasz: **{entry['species']}**")
 
+        at_result = st.session_state.get("practice_at_result")
+        if at_result is True:
+            st.success(f"✅ Megnevezés helyes!")
+        elif at_result is False:
+            correct_types = ", ".join(entry["trophy_data"]["animal_type"])
+            st.error(f"❌ Megnevezés helytelen! Helyes: **{correct_types}**")
+
         if entry.get("protection"):
             st.info(f"Védettség: {entry['protection']}")
 
@@ -126,6 +162,7 @@ if page == "Gyakorlás":
             st.session_state["practice_entry"] = random.choice(data)
             st.session_state["practice_answered"] = False
             st.session_state["practice_result"] = None
+            st.session_state["practice_at_result"] = None
             st.rerun()
 
 
@@ -171,6 +208,10 @@ elif page == "Vizsgaszimuláció":
             else:
                 species_answer = st.selectbox("Fajnév:", [""] + all_species, index=0, key=f"exam_input_{idx}", placeholder="Kezdj el gépelni...")
 
+            animal_type_answer = None
+            if entry["species"] in ANIMAL_TYPE_OPTIONS and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
+                animal_type_answer = st.selectbox("Megnevezés:", [""] + ANIMAL_TYPE_OPTIONS[entry["species"]], index=0, key=f"exam_at_{idx}")
+
             trophy_age = None
             trophy_harvest = None
             if entry["is_trophy"]:
@@ -188,6 +229,11 @@ elif page == "Vizsgaszimuláció":
             submitted = st.form_submit_button("Tovább")
             if submitted:
                 species_correct = check_answer(species_answer or "", entry["species"])
+
+                # Check animal type
+                animal_type_correct = None
+                if animal_type_answer and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
+                    animal_type_correct = check_animal_type(animal_type_answer, entry["trophy_data"]["animal_type"])
 
                 trophy_correct = None
                 if entry["is_trophy"] and entry["trophy_data"]:
@@ -217,8 +263,11 @@ elif page == "Vizsgaszimuláció":
                     "species_correct": species_correct,
                     "trophy_correct": trophy_correct,
                     "protection_correct": protection_correct,
+                    "animal_type_correct": animal_type_correct,
                     "user_species": species_answer or "",
                     "correct_species": entry["species"],
+                    "user_animal_type": animal_type_answer,
+                    "correct_animal_type": entry.get("trophy_data", {}).get("animal_type") if entry.get("trophy_data") else None,
                     "user_age": trophy_age,
                     "user_harvest": trophy_harvest,
                     "user_protection": protection_answer,
@@ -259,10 +308,10 @@ elif page == "Vizsgaszimuláció":
         st.divider()
         st.subheader("Részletes eredmények")
         for i, r in enumerate(results):
-            # Icon logic: ✅ all correct, ⚠️ species correct but trophy/protection wrong, ❌ species wrong
+            # Icon logic: ✅ all correct, ⚠️ species correct but trophy/protection/animal_type wrong, ❌ species wrong
             if not r["species_correct"]:
                 icon = "❌"
-            elif r.get("trophy_correct") is False or r.get("protection_correct") is False:
+            elif r.get("trophy_correct") is False or r.get("protection_correct") is False or r.get("animal_type_correct") is False:
                 icon = "⚠️"
             else:
                 icon = "✅"
@@ -270,6 +319,10 @@ elif page == "Vizsgaszimuláció":
                 st.image(image_path(r["filename"]), width=300)
                 st.write(f"**Te válaszod:** {r['user_species']}")
                 st.write(f"**Helyes válasz:** {r['correct_species']}")
+                if r.get("correct_animal_type"):
+                    at_icon = "✅" if r.get("animal_type_correct") else "❌"
+                    correct_at = ", ".join(r["correct_animal_type"])
+                    st.write(f"{at_icon} Megnevezés: {r.get('user_animal_type', '—')} (helyes: {correct_at})")
                 if r["is_trophy"] and r["trophy_data"]:
                     td = r["trophy_data"]
                     age_icon = "✅" if r.get("user_age") == td["age_group"] else "❌"

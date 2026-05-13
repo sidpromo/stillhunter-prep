@@ -1207,7 +1207,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén"
+      ],
+      "description": null
+    }
   },
   {
     "id": 111,
@@ -1221,7 +1228,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Öreg, visszarakott gímszarvasbika"
     }
   },
@@ -1237,7 +1246,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Erős csapos gímszarvasbika, kímélendő"
     }
   },
@@ -1253,7 +1264,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Kímélendő fiatal (2. agancsú), villás gímszarvasbika"
     }
   },
@@ -1269,7 +1282,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú, barkás gímszarvasbika, kímélendő"
     }
   },
@@ -1285,7 +1300,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú, lőhető, villás gímszarvasbika"
     }
   },
@@ -1301,7 +1318,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú gímszarvasbika agancstisztítás idején (REVIEW)"
     }
   },
@@ -1317,7 +1336,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú gímszarvasbika, kímélendő"
     }
   },
@@ -1333,7 +1354,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Öreg, visszarakott gímszarvasbika, lőhető"
     }
   },
@@ -1349,7 +1372,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Fiatal, selejt gímszarvasbika, lőhető"
     }
   },
@@ -1362,7 +1387,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén",
+        "borjú"
+      ],
+      "description": null
+    }
   },
   {
     "id": 121,
@@ -1376,7 +1409,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Öreg gímszarvasbika, lőhető"
     }
   },
@@ -1392,7 +1427,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Golyóérett gímszarvasbika, lőhető"
     }
   },
@@ -1408,7 +1445,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkor végén járó gímszarvasbika, lőhető"
     }
   },
@@ -1424,7 +1463,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Fiatal, jobb száron dárdás gímszarvasbika, lőhető"
     }
   },
@@ -1437,7 +1478,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén",
+        "borjú"
+      ],
+      "description": null
+    }
   },
   {
     "id": 126,
@@ -1451,7 +1500,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Fiatal gímszarvasbika, kímélendő"
     }
   },
@@ -1467,7 +1518,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú selejt gímszarvabika, lőhető"
     }
   },
@@ -1483,7 +1536,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "2. agancsú gímszarvasbika, kímélendő"
     }
   },
@@ -1499,7 +1554,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú gímszarvasbika, kímélendő"
     }
   },
@@ -1515,7 +1572,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú, selejt gímszarvasbika, lőhető"
     }
   },
@@ -1531,7 +1590,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú gímszarvasbika, kímélendő"
     }
   },
@@ -1547,7 +1608,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Öreg gímszarvasbika, lőhető"
     }
   },
@@ -1563,7 +1626,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú, szűk állású, villás selejt gímszarvasbika, lőhető"
     }
   },
@@ -1579,7 +1644,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Csapos gímszarvasbika, kímélendő"
     }
   },
@@ -1595,7 +1662,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkor elején járó, kímélendő gímszarvasbika"
     }
   },
@@ -1608,7 +1677,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén",
+        "borjú"
+      ],
+      "description": null
+    }
   },
   {
     "id": 137,
@@ -1619,7 +1696,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "borjú"
+      ],
+      "description": null
+    }
   },
   {
     "id": 138,
@@ -1630,7 +1714,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén"
+      ],
+      "description": null
+    }
   },
   {
     "id": 139,
@@ -1641,7 +1732,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén"
+      ],
+      "description": null
+    }
   },
   {
     "id": 140,
@@ -1652,7 +1750,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "borjú"
+      ],
+      "description": null
+    }
   },
   {
     "id": 141,
@@ -1663,7 +1768,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén"
+      ],
+      "description": null
+    }
   },
   {
     "id": 142,
@@ -1674,7 +1786,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén",
+        "borjú"
+      ],
+      "description": null
+    }
   },
   {
     "id": 143,
@@ -1685,7 +1805,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén",
+        "borjú"
+      ],
+      "description": null
+    }
   },
   {
     "id": 144,
@@ -1696,7 +1824,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén",
+        "borjú"
+      ],
+      "description": null
+    }
   },
   {
     "id": 145,
@@ -1710,7 +1846,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Golyóérett dámbika, lőhető"
     }
   },
@@ -1726,7 +1864,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú dámbika, kímélendő"
     }
   },
@@ -1742,7 +1882,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú dámbika, kímélendő"
     }
   },
@@ -1758,7 +1900,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Hasadt lapátú középkorú dámbika, lőhető"
     }
   },
@@ -1774,7 +1918,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú dámbika, kímélendő"
     }
   },
@@ -1790,7 +1936,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Középkorú dámbika hasadó lapáttal, lőhető"
     }
   },
@@ -1806,7 +1954,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Fiatal, kanalas dámbika, kímélendő"
     }
   },
@@ -1822,7 +1972,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Öreg dámbika, lőhető"
     }
   },
@@ -1838,7 +1990,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Erősen visszarakott dámbika, lőhető"
     }
   },
@@ -1854,7 +2008,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Öreg dámbika, lőhető"
     }
   },
@@ -1870,7 +2026,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Csapos és egy fiatalkorú dámbika, kímélendők"
     }
   },
@@ -1883,7 +2041,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "tehén",
+        "borjú"
+      ],
+      "description": null
+    }
   },
   {
     "id": 157,
@@ -1897,7 +2063,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "bika",
+      "animal_type": [
+        "bika"
+      ],
       "description": "Erős csapos bika, kímélendő"
     }
   },
@@ -1913,7 +2081,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Középkorú barkás őzbak, kímélendő"
     }
   },
@@ -1929,7 +2099,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Középkorú, selejt őzbak, lőhető (sutával)"
     }
   },
@@ -1945,7 +2117,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Középkorú hatos őzbak, kímélendő"
     }
   },
@@ -1958,7 +2132,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "suta",
+        "gida"
+      ],
+      "description": null
+    }
   },
   {
     "id": 164,
@@ -1972,7 +2154,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Öreg, selejt őzbak, lőhető"
     }
   },
@@ -1988,7 +2172,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": true,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Fiatal, gombnyársas őzbak, lőhető"
     }
   },
@@ -2004,7 +2190,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Érett agancsú hatos őzbak, lőhető"
     }
   },
@@ -2020,7 +2208,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Fiatal őzbak, kímélendő"
     }
   },
@@ -2036,7 +2226,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Jó képességű középkorú őzbak, kímélendő"
     }
   },
@@ -2052,7 +2244,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Öreg, rendellenes agancsú őzbak, lőhető"
     }
   },
@@ -2068,7 +2262,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Selejt őzbak, lőhető"
     }
   },
@@ -2084,7 +2280,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Fiatal, villás bak, kímélendő"
     }
   },
@@ -2100,7 +2298,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "bak",
+      "animal_type": [
+        "bak"
+      ],
       "description": "Középkorú, lőhető őzbak"
     }
   },
@@ -2113,7 +2313,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "suta"
+      ],
+      "description": null
+    }
   },
   {
     "id": 174,
@@ -2124,7 +2331,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "suta"
+      ],
+      "description": null
+    }
   },
   {
     "id": 175,
@@ -2135,7 +2349,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "gida"
+      ],
+      "description": null
+    }
   },
   {
     "id": 176,
@@ -2149,7 +2370,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "kos",
+      "animal_type": [
+        "kos"
+      ],
       "description": "Erős, közepes ívű, golyóérett muflonkos"
     }
   },
@@ -2165,7 +2388,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "kos",
+      "animal_type": [
+        "kos"
+      ],
       "description": "Középkorú, kímélendő muflonkos"
     }
   },
@@ -2181,7 +2406,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": true,
-      "animal_type": "kos",
+      "animal_type": [
+        "kos"
+      ],
       "description": "Fiatal, lőhető selejt kos, nyakba növő csigával"
     }
   },
@@ -2197,7 +2424,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "kos",
+      "animal_type": [
+        "kos"
+      ],
       "description": "Középkorú, kímélendő muflonkos"
     }
   },
@@ -2210,7 +2439,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "juh"
+      ],
+      "description": null
+    }
   },
   {
     "id": 181,
@@ -2224,7 +2460,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": true,
-      "animal_type": "kos",
+      "animal_type": [
+        "kos"
+      ],
       "description": "Áll alá növő, középkorú selejt muflonkos, lőhető"
     }
   },
@@ -2240,7 +2478,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "kos",
+      "animal_type": [
+        "kos"
+      ],
       "description": "Középkorú muflonkos (nagy ívű), kímélendő"
     }
   },
@@ -2256,7 +2496,9 @@
     "trophy_data": {
       "age_group": "öreg",
       "harvestable": true,
-      "animal_type": "kos",
+      "animal_type": [
+        "kos"
+      ],
       "description": "Golyóérett muflonkos (bal oldali), lőhető"
     }
   },
@@ -2272,7 +2514,9 @@
     "trophy_data": {
       "age_group": "fiatal",
       "harvestable": false,
-      "animal_type": "kos",
+      "animal_type": [
+        "kos"
+      ],
       "description": "Fiatal muflonkosok egy év különbséggel, kímélendők"
     }
   },
@@ -2288,7 +2532,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "kos",
+      "animal_type": [
+        "kos"
+      ],
       "description": "Jó képességű, középkorú kos, kímélendő"
     }
   },
@@ -2304,7 +2550,9 @@
     "trophy_data": {
       "age_group": "középkorú",
       "harvestable": false,
-      "animal_type": "kos",
+      "animal_type": [
+        "kos"
+      ],
       "description": "Középkorú muflonkos, kímélendő"
     }
   },
@@ -2317,7 +2565,16 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "juh",
+        "jerke",
+        "bárány"
+      ],
+      "description": null
+    }
   },
   {
     "id": 188,
@@ -2328,7 +2585,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "bárány"
+      ],
+      "description": null
+    }
   },
   {
     "id": 189,
@@ -2339,7 +2603,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "bárány"
+      ],
+      "description": null
+    }
   },
   {
     "id": 190,
@@ -2350,7 +2621,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "koca",
+        "malac"
+      ],
+      "description": null
+    }
   },
   {
     "id": 191,
@@ -2361,7 +2640,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "koca",
+        "süldő"
+      ],
+      "description": null
+    }
   },
   {
     "id": 192,
@@ -2372,7 +2659,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "kan"
+      ],
+      "description": null
+    }
   },
   {
     "id": 193,
@@ -2383,7 +2677,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "koca"
+      ],
+      "description": null
+    }
   },
   {
     "id": 194,
@@ -2394,7 +2695,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "kan"
+      ],
+      "description": null
+    }
   },
   {
     "id": 195,
@@ -2405,7 +2713,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "kan"
+      ],
+      "description": null
+    }
   },
   {
     "id": 196,
@@ -2416,7 +2731,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "süldő"
+      ],
+      "description": null
+    }
   },
   {
     "id": 197,
@@ -2427,7 +2749,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "malac"
+      ],
+      "description": null
+    }
   },
   {
     "id": 198,
@@ -2438,7 +2767,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "koca"
+      ],
+      "description": null
+    }
   },
   {
     "id": 199,
@@ -2449,7 +2785,14 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "süldő"
+      ],
+      "description": null
+    }
   },
   {
     "id": 200,
@@ -2460,6 +2803,15 @@
     "group": "emlős",
     "is_trophy": false,
     "protection": null,
-    "trophy_data": null
+    "trophy_data": {
+      "age_group": null,
+      "harvestable": null,
+      "animal_type": [
+        "koca",
+        "malac",
+        "süldő"
+      ],
+      "description": null
+    }
   }
 ]

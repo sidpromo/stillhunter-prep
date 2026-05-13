@@ -228,6 +228,18 @@ elif page == "Vizsgaszimuláció":
 
             submitted = st.form_submit_button("Tovább")
             if submitted:
+                if not species_answer:
+                    st.warning("Válassz fajnevet!")
+                    st.stop()
+                if entry["species"] in ANIMAL_TYPE_OPTIONS and entry.get("trophy_data") and entry["trophy_data"].get("animal_type") and not animal_type_answer:
+                    st.warning("Válassz megnevezést!")
+                    st.stop()
+                if entry["is_trophy"] and (not trophy_age or not trophy_harvest):
+                    st.warning("Töltsd ki a trófea minősítést!")
+                    st.stop()
+                if entry.get("protection") and not protection_answer:
+                    st.warning("Válassz védettségi besorolást!")
+                    st.stop()
                 species_correct = check_answer(species_answer or "", entry["species"])
 
                 # Check animal type

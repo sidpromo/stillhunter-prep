@@ -384,8 +384,8 @@ elif page == "Trófea gyakorlás":
                 species_answer = st.selectbox("Fajnév:", [""] + trophy_species_list, index=0, key="trophy_species_input", placeholder="Kezdj el gépelni...")
             animal_type_answer = None
             if entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
-                all_types = ["bika", "tehén", "borjú", "bak", "suta", "gida", "kos", "juh", "jerke", "bárány", "kan", "koca", "süldő", "malac"]
-                animal_type_answer = st.selectbox("Megnevezés:", [""] + all_types, index=0, key="trophy_at_input")
+                trophy_types = ["bika", "bak", "kos"]
+                animal_type_answer = st.selectbox("Megnevezés:", [""] + trophy_types, index=0, key="trophy_at_input")
             age_answer = st.selectbox("Korcsoport:", ["fiatal", "középkorú", "öreg"], key="trophy_age_input")
             harvest_answer = st.selectbox("Elejthetőség:", ["lőhető", "kímélendő"], key="trophy_harvest_input")
             submitted = st.form_submit_button("Ellenőrzés")

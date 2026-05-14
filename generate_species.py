@@ -1,20 +1,25 @@
-"""Script to generate data/species.json from image filenames."""
+"""Script to generate species data from image filenames and compare against existing species.json.
+
+Usage:
+    uv run python generate_species.py          # Compare only, report differences
+    uv run python generate_species.py --write  # Overwrite species.json (use with caution)
+"""
 import json
 import os
 import re
+import sys
 
 IMAGES_DIR = os.path.join(os.path.dirname(__file__), "images")
 OUTPUT = os.path.join(os.path.dirname(__file__), "data", "species.json")
 
-# Species that are nagyvad trófeás (trophy-bearing big game)
-TROPHY_SPECIES = {"Gímszarvas", "Dámszarvas", "Őz", "Muflon", "Vaddisznó"}
+# Species that are nagyvad (big game)
+NAGYVAD_SPECIES = {"Gímszarvas", "Dámvad", "Őz", "Muflon", "Vaddisznó", "Szikaszarvas", "Zerge"}
 
 # Keywords indicating tarvad (non-trophy big game)
 TARVAD_KEYWORDS = ["tehén", "borjú", "borjával", "borjakkal", "koca", "malac", "süldő",
                    "gida", "suta", "juh", "jerke", "bárány", "ünő", "család", "csapat",
                    "vezértehén"]
 
-# Species → group mapping
 BIRD_SPECIES = {
     "Nagy lilik", "Vetési lúd", "Nyári lúd", "Nílusi lúd", "Kanadai lúd",
     "Tőkés réce", "Fogoly", "Fácán", "Szárcsa", "Örvös galamb", "Balkáni gerle",
@@ -32,22 +37,12 @@ BIRD_SPECIES = {
     "Vetési varjú", "Holló", "Seregély",
 }
 
-# Apróvad species (huntable small game)
 APROVAD_SPECIES = {
     "Nagy lilik", "Vetési lúd", "Nyári lúd", "Nílusi lúd", "Kanadai lúd",
     "Tőkés réce", "Fogoly", "Fácán", "Szárcsa", "Örvös galamb", "Balkáni gerle",
-    "Erdei szalonka", "Mezei nyúl", "Üregi nyúl",
-}
-
-# Huntable predators/other (egyéb vadászható)
-EGYEB_VADASZHATÓ = {
-    "Dolmányos varjú", "Szarka", "Szajkó", "Pézsmapocok",
-    "Róka", "Aranysakál", "Nyestkutya", "Mosómedve", "Borz", "Nyest", "Házi görény",
-}
-
-# Nagyvad species
-NAGYVAD_SPECIES = {
-    "Gímszarvas", "Dámszarvas", "Őz", "Muflon", "Vaddisznó", "Szikaszarvas", "Zerge",
+    "Erdei szalonka", "Mezei nyúl", "Üregi nyúl", "Dolmányos varjú", "Szarka",
+    "Szajkó", "Pézsmapocok", "Róka", "Aranysakál", "Nyestkutya", "Mosómedve",
+    "Borz", "Nyest", "Házi görény",
 }
 
 
@@ -56,7 +51,7 @@ def species_from_range(img_id: int) -> str | None:
     if 110 <= img_id <= 142:
         return "Gímszarvas"
     if 143 <= img_id <= 157:
-        return "Dámszarvas"
+        return "Dámvad"
     if 158 <= img_id <= 175:
         return "Őz"
     if 176 <= img_id <= 189:
@@ -68,18 +63,13 @@ def species_from_range(img_id: int) -> str | None:
 
 def extract_species(filename: str) -> str:
     """Extract species name from filename."""
-    # Get image ID for range-based fallback
     id_match = re.match(r"^(\d+)\.", filename)
     img_id = int(id_match.group(1)) if id_match else 0
 
-    # Remove number prefix
     name = re.sub(r"^\d+\.\s*", "", filename)
-    # Remove extension
     name = re.sub(r"\.jpg$", "", name, flags=re.IGNORECASE)
-    # Remove protection suffix
     name = re.sub(r"\s*-\s*(Fokozottan védett|Védett|jogszabály változás alapján védett faj|Európai közösségben természetvédelmi szempontból jelentős faj).*$", "", name)
 
-    # Map to canonical species name
     species_map = {
         "gímszarvas": "Gímszarvas",
         "gím": "Gímszarvas",
@@ -93,12 +83,10 @@ def extract_species(filename: str) -> str:
 
     lower = name.lower()
 
-    # Check for nagyvad species keywords in the description
     for key, species in species_map.items():
         if key in lower:
             return species
 
-    # Handle specific compound names
     if "tőkésréce" in lower or "tőkés réce" in lower:
         return "Tőkés réce"
     if "fogolycsibe" in lower or "fogoly" in lower:
@@ -147,17 +135,12 @@ def extract_species(filename: str) -> str:
     if "seregély" in lower:
         return "Seregély"
 
-    # Range-based inference for ambiguous nagyvad filenames
-    # (e.g., "Fiatal, villás bak, kímélendő" → Őz based on range 158-175)
     range_species = species_from_range(img_id)
     if range_species:
         return range_species
 
-    # For simple names: take the first part before comma
     simple = name.split(",")[0].strip()
-    # Remove gender/age qualifiers
     simple = re.sub(r"\s+(gácsér|tojó|hím|pár|kakas|tyúk)$", "", simple)
-
     return simple
 
 
@@ -174,115 +157,12 @@ def extract_protection(filename: str) -> str | None:
     return None
 
 
-def extract_trophy_data(filename: str, species: str) -> dict | None:
-    """Extract trophy assessment data from filename."""
-    lower = filename.lower()
-
-    if "lőhető" not in lower and "kímélendő" not in lower:
-        return None
-
-    harvestable = "lőhető" in lower
-
-    # Age group
-    age_group = None
-    if "golyóérett" in lower:
-        age_group = "öreg"
-    elif "öreg" in lower or "visszarakott" in lower:
-        age_group = "öreg"
-    elif "középkor végén" in lower or "középkor elején" in lower or "középkorú" in lower or "középkor" in lower:
-        age_group = "középkorú"
-    elif "fiatal" in lower or "2. agancsú" in lower or "csapos" in lower or "gombnyársas" in lower:
-        age_group = "fiatal"
-    elif "érett agancsú" in lower or "érett" in lower:
-        age_group = "öreg"
-    elif "selejt" in lower:
-        age_group = "középkorú"
-
-    # Animal type
-    animal_type = None
-    if species == "Gímszarvas":
-        if "bika" in lower:
-            animal_type = "bika"
-        elif "tehén" in lower:
-            animal_type = "tehén"
-        elif "borj" in lower:
-            animal_type = "borjú"
-    elif species == "Dámszarvas":
-        if "bika" in lower:
-            animal_type = "bika"
-        elif "tehén" in lower:
-            animal_type = "tehén"
-    elif species == "Őz":
-        if "bak" in lower:
-            animal_type = "bak"
-        elif "suta" in lower:
-            animal_type = "suta"
-        elif "gida" in lower:
-            animal_type = "gida"
-    elif species == "Muflon":
-        if "kos" in lower:
-            animal_type = "kos"
-        elif "juh" in lower or "jerke" in lower:
-            animal_type = "juh"
-        elif "bárány" in lower:
-            animal_type = "bárány"
-    elif species == "Vaddisznó":
-        if "kan" in lower:
-            animal_type = "kan"
-        elif "koca" in lower:
-            animal_type = "koca"
-        elif "süldő" in lower:
-            animal_type = "süldő"
-        elif "malac" in lower:
-            animal_type = "malac"
-
-    # Remove number prefix and extension for description
-    desc = re.sub(r"^\d+\.\s*", "", filename)
-    desc = re.sub(r"\.jpg$", "", desc, flags=re.IGNORECASE)
-
-    return {
-        "age_group": age_group,
-        "harvestable": harvestable,
-        "animal_type": animal_type,
-        "description": desc,
-    }
-
-
-def is_tarvad(filename: str, species: str, trophy_data: dict | None) -> bool:
-    """Determine if a nagyvad image is tarvad (non-trophy)."""
-    if species not in NAGYVAD_SPECIES:
-        return False
-    lower = filename.lower()
-    # If it has trophy data (lőhető/kímélendő), it's trófeás
-    if trophy_data is not None:
-        return False
-    # If it contains tarvad keywords, it's tarvad
-    for kw in TARVAD_KEYWORDS:
-        if kw in lower:
-            return True
-    # Nagyvad without trophy keywords = tarvad
-    return True
-
-
-def categorize(species: str, protection: str | None) -> tuple[str, str | None]:
-    """Return (category, subcategory)."""
-    if protection:
-        return (protection, None)
-    if species in NAGYVAD_SPECIES:
-        return ("vadászható", "nagyvad")
-    if species in APROVAD_SPECIES:
-        return ("vadászható", "apróvad")
-    if species in EGYEB_VADASZHATÓ:
-        return ("vadászható", "egyéb")
-    return ("vadászható", "apróvad")
-
-
-def generate():
+def generate_from_filenames() -> list[dict]:
+    """Generate species entries from image filenames (baseline only)."""
     entries = []
     for fname in sorted(os.listdir(IMAGES_DIR)):
         if not fname.lower().endswith(".jpg"):
             continue
-        # Extract ID
         match = re.match(r"^(\d+)\.", fname)
         if not match:
             continue
@@ -290,49 +170,80 @@ def generate():
         img_id = int(match.group(1))
         species = extract_species(fname)
         protection = extract_protection(fname)
-        trophy_data = extract_trophy_data(fname, species)
-        category, subcategory = categorize(species, protection)
-
-        # Determine if trophy
-        is_trophy = trophy_data is not None
-
-        # Override subcategory for nagyvad
-        if species in NAGYVAD_SPECIES and protection is None:
-            if is_tarvad(fname, species, trophy_data):
-                subcategory = "nagyvad_tarvad"
-            else:
-                subcategory = "nagyvad_trófeás" if is_trophy else "nagyvad_tarvad"
-
         group = "madár" if species in BIRD_SPECIES else "emlős"
 
         entries.append({
             "id": img_id,
             "filename": fname,
             "species": species,
-            "category": category,
-            "subcategory": subcategory,
-            "group": group,
-            "is_trophy": is_trophy,
             "protection": protection,
-            "trophy_data": trophy_data,
+            "group": group,
         })
 
     entries.sort(key=lambda x: x["id"])
-
-    os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
-    with open(OUTPUT, "w", encoding="utf-8") as f:
-        json.dump(entries, f, ensure_ascii=False, indent=2)
-
-    print(f"Generated {len(entries)} entries in {OUTPUT}")
     return entries
 
 
+def compare(generated: list[dict], existing: list[dict]):
+    """Compare generated baseline against existing species.json."""
+    existing_by_id = {e["id"]: e for e in existing}
+    generated_by_id = {e["id"]: e for e in generated}
+
+    diffs = []
+
+    # Check for missing/extra entries
+    gen_ids = set(generated_by_id.keys())
+    ext_ids = set(existing_by_id.keys())
+
+    for mid in sorted(gen_ids - ext_ids):
+        diffs.append(f"  NEW in images (not in species.json): #{mid} {generated_by_id[mid]['filename']}")
+    for mid in sorted(ext_ids - gen_ids):
+        diffs.append(f"  REMOVED from images (still in species.json): #{mid} {existing_by_id[mid]['filename']}")
+
+    # Compare shared entries (only fields the generator can determine)
+    for img_id in sorted(gen_ids & ext_ids):
+        g = generated_by_id[img_id]
+        e = existing_by_id[img_id]
+
+        if g["species"] != e["species"]:
+            diffs.append(f"  #{img_id} species: generated={g['species']!r}, existing={e['species']!r}")
+        if g["protection"] != e.get("protection"):
+            diffs.append(f"  #{img_id} protection: generated={g['protection']!r}, existing={e.get('protection')!r}")
+        if g["group"] != e.get("group"):
+            diffs.append(f"  #{img_id} group: generated={g['group']!r}, existing={e.get('group')!r}")
+        if g["filename"] != e["filename"]:
+            diffs.append(f"  #{img_id} filename: generated={g['filename']!r}, existing={e['filename']!r}")
+
+    return diffs
+
+
 if __name__ == "__main__":
-    entries = generate()
-    # Print summary
-    from collections import Counter
-    cats = Counter((e["category"], e["subcategory"]) for e in entries)
-    for k, v in sorted(cats.items()):
-        print(f"  {k}: {v}")
-    trophy_count = sum(1 for e in entries if e["is_trophy"])
-    print(f"  Trophy images: {trophy_count}")
+    write_mode = "--write" in sys.argv
+
+    generated = generate_from_filenames()
+    print(f"Generated {len(generated)} entries from image filenames.")
+
+    if os.path.exists(OUTPUT):
+        with open(OUTPUT, encoding="utf-8") as f:
+            existing = json.load(f)
+        print(f"Existing species.json has {len(existing)} entries.")
+
+        diffs = compare(generated, existing)
+        if diffs:
+            print(f"\n{len(diffs)} difference(s) found:")
+            for d in diffs:
+                print(d)
+        else:
+            print("\n✅ No differences — species.json is consistent with image filenames.")
+
+        if write_mode:
+            print("\n⚠️  --write mode: this would overwrite manual edits (trophy_data, subcategory, etc.)")
+            print("    Not recommended. Edit species.json manually instead.")
+    else:
+        if write_mode:
+            os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
+            with open(OUTPUT, "w", encoding="utf-8") as f:
+                json.dump(generated, f, ensure_ascii=False, indent=2)
+            print(f"Written to {OUTPUT}")
+        else:
+            print(f"No existing {OUTPUT} found. Run with --write to create initial version.")

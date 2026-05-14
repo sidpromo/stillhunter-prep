@@ -137,13 +137,7 @@ if page == "Gyakorlás":
                     at_correct = check_animal_type(animal_type_answer, entry["trophy_data"]["animal_type"])
                 prot_correct = None
                 if protection_answer and entry.get("protection"):
-                    expected = entry["protection"]
-                    if expected == "EU jelentős":
-                        prot_correct = protection_answer == "EU közösségi jelentőségű"
-                    elif expected == "fokozottan védett":
-                        prot_correct = protection_answer == "fokozottan védett"
-                    else:
-                        prot_correct = protection_answer == "védett"
+                    prot_correct = check_protection(protection_answer, entry["protection"])
                 st.session_state["practice_answered"] = True
                 st.session_state["practice_result"] = correct
                 st.session_state["practice_at_result"] = at_correct
@@ -169,13 +163,7 @@ if page == "Gyakorlás":
                     at_correct = check_animal_type(animal_type_answer, entry["trophy_data"]["animal_type"])
                 prot_correct = None
                 if protection_answer and entry.get("protection"):
-                    expected = entry["protection"]
-                    if expected == "EU jelentős":
-                        prot_correct = protection_answer == "EU közösségi jelentőségű"
-                    elif expected == "fokozottan védett":
-                        prot_correct = protection_answer == "fokozottan védett"
-                    else:
-                        prot_correct = protection_answer == "védett"
+                    prot_correct = check_protection(protection_answer, entry["protection"])
                 st.session_state["practice_answered"] = True
                 st.session_state["practice_result"] = correct
                 st.session_state["practice_at_result"] = at_correct
@@ -302,13 +290,7 @@ elif page == "Vizsgaszimuláció":
                 # Check protection level
                 protection_correct = None
                 if entry.get("protection"):
-                    expected_prot = entry["protection"]
-                    if expected_prot == "EU jelentős":
-                        protection_correct = protection_answer == "EU közösségi jelentőségű"
-                    elif expected_prot == "fokozottan védett":
-                        protection_correct = protection_answer == "fokozottan védett"
-                    else:
-                        protection_correct = protection_answer == "védett"
+                    protection_correct = check_protection(protection_answer or "", entry["protection"])
 
                 result = {
                     "id": entry["id"],

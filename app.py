@@ -6,6 +6,8 @@ import streamlit as st
 
 from utils.helpers import (
     check_answer,
+    check_animal_type,
+    check_protection,
     compose_exam,
     evaluate_exam,
     filter_by_category,
@@ -54,11 +56,6 @@ ANIMAL_TYPE_OPTIONS = {
     "Muflon": ["kos", "juh", "jerke", "bárány"],
     "Vaddisznó": ["kan", "koca", "süldő", "malac"],
 }
-
-
-def check_animal_type(user_answer: str, correct_types: list) -> bool:
-    """Check if user's animal type answer matches any of the correct types."""
-    return user_answer in correct_types
 
 
 # --- Session state init ---

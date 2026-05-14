@@ -234,3 +234,17 @@ def _is_huntable_species(name: str) -> bool:
         if check_answer(normalized, sp):
             return True
     return False
+
+
+def check_animal_type(user_answer: str, correct_types: list) -> bool:
+    """Check if user's animal type answer matches any of the correct types."""
+    return user_answer in correct_types
+
+
+def check_protection(user_answer: str, expected: str) -> bool:
+    """Check if user's protection level answer is correct."""
+    if expected == "EU jelentős":
+        return user_answer == "EU közösségi jelentőségű"
+    if expected == "fokozottan védett":
+        return user_answer == "fokozottan védett"
+    return user_answer == "védett"

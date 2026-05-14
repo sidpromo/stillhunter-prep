@@ -1,7 +1,9 @@
 """Unit tests for utils/helpers.py"""
 import pytest
 from utils.helpers import (
+    check_animal_type,
     check_answer,
+    check_protection,
     compose_exam,
     evaluate_exam,
     filter_by_category,
@@ -318,3 +320,40 @@ def test_trophy_harvestable_is_bool(species_data):
     trophy = filter_trophy(species_data)
     for e in trophy:
         assert isinstance(e["trophy_data"]["harvestable"], bool)
+
+
+# --- check_animal_type ---
+
+def test_check_animal_type_correct():
+    assert check_animal_type("bika", ["bika"]) is True
+    assert check_animal_type("tehén", ["tehén", "borjú"]) is True
+    assert check_animal_type("borjú", ["tehén", "borjú"]) is True
+
+
+def test_check_animal_type_wrong():
+    assert check_animal_type("suta", ["bak"]) is False
+    assert check_animal_type("kos", ["bika"]) is False
+    assert check_animal_type("", ["bika"]) is False
+
+
+def test_check_animal_type_multi_correct():
+    assert check_animal_type("juh", ["juh", "jerke", "bárány"]) is True
+    assert check_animal_type("jerke", ["juh", "jerke", "bárány"]) is True
+    assert check_animal_type("kos", ["juh", "jerke", "bárány"]) is False
+
+
+# --- check_protection ---
+
+def test_check_protection_vedett():
+    assert check_protection("védett", "védett") is True
+    assert check_protection("fokozottan védett", "védett") is False
+
+
+def test_check_protection_fokozottan():
+    assert check_protection("fokozottan védett", "fokozottan védett") is True
+    assert check_protection("védett", "fokozottan védett") is False
+
+
+def test_check_protection_eu():
+    assert check_protection("EU közösségi jelentőségű", "EU jelentős") is True
+    assert check_protection("védett", "EU jelentős") is False

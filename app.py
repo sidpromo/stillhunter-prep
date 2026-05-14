@@ -382,6 +382,10 @@ elif page == "Trófea gyakorlás":
             else:
                 trophy_species_list = sorted(set(e["species"] for e in trophy_data_list))
                 species_answer = st.selectbox("Fajnév:", [""] + trophy_species_list, index=0, key="trophy_species_input", placeholder="Kezdj el gépelni...")
+            animal_type_answer = None
+            if entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
+                all_types = ["bika", "tehén", "borjú", "bak", "suta", "gida", "kos", "juh", "jerke", "bárány", "kan", "koca", "süldő", "malac"]
+                animal_type_answer = st.selectbox("Megnevezés:", [""] + all_types, index=0, key="trophy_at_input")
             age_answer = st.selectbox("Korcsoport:", ["fiatal", "középkorú", "öreg"], key="trophy_age_input")
             harvest_answer = st.selectbox("Elejthetőség:", ["lőhető", "kímélendő"], key="trophy_harvest_input")
             submitted = st.form_submit_button("Ellenőrzés")
@@ -389,8 +393,12 @@ elif page == "Trófea gyakorlás":
             if submitted and species_answer:
                 st.session_state["trophy_answered"] = True
                 td = entry["trophy_data"]
+                at_correct = None
+                if animal_type_answer and td.get("animal_type"):
+                    at_correct = check_animal_type(animal_type_answer, td["animal_type"])
                 st.session_state["trophy_results"] = {
                     "species_correct": check_answer(species_answer, entry["species"]),
+                    "animal_type_correct": at_correct,
                     "age_correct": age_answer == td["age_group"],
                     "harvest_correct": (harvest_answer == "lőhető") == td["harvestable"],
                 }
@@ -401,10 +409,14 @@ elif page == "Trófea gyakorlás":
         td = entry["trophy_data"]
 
         sp_icon = "✅" if r["species_correct"] else "❌"
+        at_icon = "✅" if r.get("animal_type_correct") else ("❌" if r.get("animal_type_correct") is False else "")
         age_icon = "✅" if r["age_correct"] else "❌"
         harvest_icon = "✅" if r["harvest_correct"] else "❌"
 
         st.write(f"{sp_icon} **Faj:** {entry['species']}")
+        if at_icon and td.get("animal_type"):
+            correct_at = ", ".join(td["animal_type"])
+            st.write(f"{at_icon} **Megnevezés:** {correct_at}")
         st.write(f"{age_icon} **Korcsoport:** {td['age_group']}")
         harvest_str = "lőhető" if td["harvestable"] else "kímélendő"
         st.write(f"{harvest_icon} **Elejthetőség:** {harvest_str}")

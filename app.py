@@ -130,7 +130,10 @@ if page == "Gyakorlás":
             if entry.get("protection"):
                 protection_answer = st.selectbox("Védettség:", ["", "védett", "fokozottan védett", "EU közösségi jelentőségű"], index=0, key="practice_prot_mc")
             submitted = st.button("Ellenőrzés", key="practice_submit")
-            if submitted and answer:
+            if submitted:
+                if not answer:
+                    st.warning("Válassz fajnevet!")
+                    st.stop()
                 correct = check_answer(answer, entry["species"])
                 at_correct = None
                 if animal_type_answer and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
@@ -159,7 +162,10 @@ if page == "Gyakorlás":
             if entry.get("protection"):
                 protection_answer = st.selectbox("Védettség:", ["", "védett", "fokozottan védett", "EU közösségi jelentőségű"], index=0, key="practice_prot_input")
             submitted = st.button("Ellenőrzés", key="practice_submit_txt")
-            if submitted and answer:
+            if submitted:
+                if not answer:
+                    st.warning("Válassz fajnevet!")
+                    st.stop()
                 correct = check_answer(answer, entry["species"])
                 at_correct = None
                 if animal_type_answer and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):

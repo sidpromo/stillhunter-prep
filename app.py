@@ -114,7 +114,7 @@ if page == "Gyakorlás":
         st.session_state["practice_result"] = None
 
     entry = st.session_state["practice_entry"]
-    st.image(image_path(entry["filename"]), use_container_width=True)
+    st.image(image_path(entry["filename"]), width="stretch")
 
     if not st.session_state["practice_answered"]:
         if multiple_choice:
@@ -232,7 +232,7 @@ elif page == "Vizsgaszimuláció":
         entry = exam_images[idx]
 
         st.progress((idx) / 15, text=f"Kérdés {idx + 1} / 15")
-        st.image(image_path(entry["filename"]), use_container_width=True)
+        st.image(image_path(entry["filename"]), width="stretch")
 
         with st.form(f"exam_form_{idx}"):
             if multiple_choice:
@@ -399,7 +399,7 @@ elif page == "Trófea gyakorlás":
         st.session_state["trophy_answered"] = False
 
     entry = st.session_state["trophy_entry"]
-    st.image(image_path(entry["filename"]), use_container_width=True)
+    st.image(image_path(entry["filename"]), width="stretch")
 
     if not st.session_state["trophy_answered"]:
         with st.form("trophy_form"):
@@ -489,7 +489,7 @@ elif page == "Képek":
                 if i + j < len(filtered):
                     entry = filtered[i + j]
                     with col:
-                        st.image(image_path(entry["filename"]), use_container_width=True)
+                        st.image(image_path(entry["filename"]), width="stretch")
                         st.caption(f"**{entry['species']}**")
                         if entry.get("protection"):
                             st.caption(f"🛡️ {entry['protection']}")

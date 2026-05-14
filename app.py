@@ -447,38 +447,42 @@ elif page == "Képek":
     st.caption("Böngészd a fajokat kategória szerint.")
 
     # Filters
-    cat_filter = st.selectbox("Kategória:", ["Mind", "Apróvad", "Nagyvad trófeás", "Nagyvad tarvad", "Védett", "Fokozottan védett"])
+    cat_filter = st.selectbox("Kategória:", ["Apróvad", "Nagyvad trófeás", "Nagyvad tarvad", "Védett", "Fokozottan védett"])
 
-    filtered = data
-    if cat_filter == "Apróvad":
-        filtered = filter_by_subcategory(filtered, "apróvad")
-    elif cat_filter == "Nagyvad trófeás":
-        filtered = filter_by_subcategory(filtered, "nagyvad_trófeás")
-    elif cat_filter == "Nagyvad tarvad":
-        filtered = filter_by_subcategory(filtered, "nagyvad_tarvad")
-    elif cat_filter == "Védett":
-        filtered = [e for e in filtered if e["protection"] in ("védett", "EU jelentős")]
-    elif cat_filter == "Fokozottan védett":
-        filtered = filter_by_category(filtered, "fokozottan védett")
+    @st.fragment
+    def show_images():
+        filtered = data
+        if cat_filter == "Apróvad":
+            filtered = filter_by_subcategory(filtered, "apróvad")
+        elif cat_filter == "Nagyvad trófeás":
+            filtered = filter_by_subcategory(filtered, "nagyvad_trófeás")
+        elif cat_filter == "Nagyvad tarvad":
+            filtered = filter_by_subcategory(filtered, "nagyvad_tarvad")
+        elif cat_filter == "Védett":
+            filtered = [e for e in filtered if e["protection"] in ("védett", "EU jelentős")]
+        elif cat_filter == "Fokozottan védett":
+            filtered = filter_by_category(filtered, "fokozottan védett")
 
-    st.write(f"**{len(filtered)} kép**")
+        st.write(f"**{len(filtered)} kép**")
 
-    # Display as grid
-    cols_per_row = 3
-    for i in range(0, len(filtered), cols_per_row):
-        cols = st.columns(cols_per_row)
-        for j, col in enumerate(cols):
-            if i + j < len(filtered):
-                entry = filtered[i + j]
-                with col:
-                    st.image(image_path(entry["filename"]), use_container_width=True)
-                    st.caption(f"**{entry['species']}**")
-                    if entry.get("protection"):
-                        st.caption(f"🛡️ {entry['protection']}")
-                    if entry.get("trophy_data") and entry["trophy_data"].get("harvestable") is not None:
-                        td = entry["trophy_data"]
-                        harvest = "lőhető" if td["harvestable"] else "kímélendő"
-                        st.caption(f"🏆 {td['age_group']} / {harvest}")
+        # Display as grid
+        cols_per_row = 3
+        for i in range(0, len(filtered), cols_per_row):
+            cols = st.columns(cols_per_row)
+            for j, col in enumerate(cols):
+                if i + j < len(filtered):
+                    entry = filtered[i + j]
+                    with col:
+                        st.image(image_path(entry["filename"]), use_container_width=True)
+                        st.caption(f"**{entry['species']}**")
+                        if entry.get("protection"):
+                            st.caption(f"🛡️ {entry['protection']}")
+                        if entry.get("trophy_data") and entry["trophy_data"].get("harvestable") is not None:
+                            td = entry["trophy_data"]
+                            harvest = "lőhető" if td["harvestable"] else "kímélendő"
+                            st.caption(f"🏆 {td['age_group']} / {harvest}")
+
+    show_images()
 
 
 # ============================================================

@@ -1,4 +1,5 @@
 """StillHunter Prep — Vadászvizsga fajfelismerés gyakorló alkalmazás."""
+import base64
 import os
 import random
 
@@ -200,6 +201,12 @@ elif page == "Vizsgaszimuláció":
 
         st.progress((idx) / 15, text=f"Kérdés {idx + 1} / 15")
         st.image(image_path(entry["filename"]), use_container_width=True)
+
+        # Preload next 3 images (hidden, browser caches them)
+        for future in exam_images[idx + 1:idx + 4]:
+            with open(image_path(future["filename"]), "rb") as f:
+                img_b64 = base64.b64encode(f.read()).decode()
+            st.markdown(f'<img src="data:image/jpeg;base64,{img_b64}" style="display:none">', unsafe_allow_html=True)
 
         with st.form(f"exam_form_{idx}"):
             if multiple_choice:

@@ -126,15 +126,28 @@ if page == "Gyakorlás":
             animal_type_answer = None
             if entry["species"] in ANIMAL_TYPE_OPTIONS and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
                 animal_type_answer = st.selectbox("Megnevezés:", [""] + ANIMAL_TYPE_OPTIONS[entry["species"]], index=0, key="practice_at_mc")
+            protection_answer = None
+            if entry.get("protection"):
+                protection_answer = st.selectbox("Védettség:", ["", "védett", "fokozottan védett", "EU közösségi jelentőségű"], index=0, key="practice_prot_mc")
             submitted = st.button("Ellenőrzés", key="practice_submit")
             if submitted and answer:
                 correct = check_answer(answer, entry["species"])
                 at_correct = None
                 if animal_type_answer and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
                     at_correct = check_animal_type(animal_type_answer, entry["trophy_data"]["animal_type"])
+                prot_correct = None
+                if protection_answer and entry.get("protection"):
+                    expected = entry["protection"]
+                    if expected == "EU jelentős":
+                        prot_correct = protection_answer == "EU közösségi jelentőségű"
+                    elif expected == "fokozottan védett":
+                        prot_correct = protection_answer == "fokozottan védett"
+                    else:
+                        prot_correct = protection_answer == "védett"
                 st.session_state["practice_answered"] = True
                 st.session_state["practice_result"] = correct
                 st.session_state["practice_at_result"] = at_correct
+                st.session_state["practice_prot_result"] = prot_correct
                 update_stats(entry["species"], correct)
                 st.rerun()
         else:
@@ -142,15 +155,28 @@ if page == "Gyakorlás":
             animal_type_answer = None
             if entry["species"] in ANIMAL_TYPE_OPTIONS and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
                 animal_type_answer = st.selectbox("Megnevezés:", [""] + ANIMAL_TYPE_OPTIONS[entry["species"]], index=0, key="practice_at_input")
+            protection_answer = None
+            if entry.get("protection"):
+                protection_answer = st.selectbox("Védettség:", ["", "védett", "fokozottan védett", "EU közösségi jelentőségű"], index=0, key="practice_prot_input")
             submitted = st.button("Ellenőrzés", key="practice_submit_txt")
             if submitted and answer:
                 correct = check_answer(answer, entry["species"])
                 at_correct = None
                 if animal_type_answer and entry.get("trophy_data") and entry["trophy_data"].get("animal_type"):
                     at_correct = check_animal_type(animal_type_answer, entry["trophy_data"]["animal_type"])
+                prot_correct = None
+                if protection_answer and entry.get("protection"):
+                    expected = entry["protection"]
+                    if expected == "EU jelentős":
+                        prot_correct = protection_answer == "EU közösségi jelentőségű"
+                    elif expected == "fokozottan védett":
+                        prot_correct = protection_answer == "fokozottan védett"
+                    else:
+                        prot_correct = protection_answer == "védett"
                 st.session_state["practice_answered"] = True
                 st.session_state["practice_result"] = correct
                 st.session_state["practice_at_result"] = at_correct
+                st.session_state["practice_prot_result"] = prot_correct
                 update_stats(entry["species"], correct)
                 st.rerun()
     else:
@@ -166,14 +192,19 @@ if page == "Gyakorlás":
             correct_types = ", ".join(entry["trophy_data"]["animal_type"])
             st.error(f"❌ Megnevezés helytelen! Helyes: **{correct_types}**")
 
-        if entry.get("protection"):
-            st.info(f"Védettség: {entry['protection']}")
+        prot_result = st.session_state.get("practice_prot_result")
+        if prot_result is True:
+            st.success("✅ Védettség helyes!")
+        elif prot_result is False:
+            expected_prot = "EU közösségi jelentőségű" if entry["protection"] == "EU jelentős" else entry["protection"]
+            st.error(f"❌ Védettség helytelen! Helyes: **{expected_prot}**")
 
         if st.button("Következő", key="practice_next"):
             st.session_state["practice_entry"] = random.choice(data)
             st.session_state["practice_answered"] = False
             st.session_state["practice_result"] = None
             st.session_state["practice_at_result"] = None
+            st.session_state["practice_prot_result"] = None
             st.rerun()
 
 

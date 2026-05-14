@@ -20,6 +20,17 @@ IMAGES_DIR = os.path.join(os.path.dirname(__file__), "images")
 
 st.set_page_config(page_title="Vadászvizsga Képfelismerés", page_icon="🦌", layout="centered")
 
+# Limit image height on desktop
+st.markdown("""
+<style>
+    [data-testid="stImage"] img {
+        max-height: 400px;
+        object-fit: contain;
+        width: auto !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 
 @st.cache_data
 def get_data():

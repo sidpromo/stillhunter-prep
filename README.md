@@ -1,6 +1,9 @@
-# 🦌 StillHunter Prep
+# StillHunter Prep
 
 A practice app for Hungarian hunter exam candidates. The exam requires identifying wildlife species from a 200-image pool, assessing trophy age groups, and determining harvestability — all under time pressure. This app replicates that experience for study and practice.
+
+## Live site:
+https://vadaszvizsga.streamlit.app/
 
 ## Features
 

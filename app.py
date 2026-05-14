@@ -471,7 +471,7 @@ elif page == "Képek":
         if cat_filter == "Apróvad":
             filtered = filter_by_subcategory(filtered, "apróvad")
         elif cat_filter == "Nagyvad trófeás":
-            filtered = filter_by_subcategory(filtered, "nagyvad_trófeás")
+            filtered = [e for e in filtered if e["subcategory"] in ("nagyvad_trófeás", "nagyvad")]
         elif cat_filter == "Nagyvad tarvad":
             filtered = filter_by_subcategory(filtered, "nagyvad_tarvad")
         elif cat_filter == "Védett":

@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping app
-        run: curl -sfL --max-time 60 https://vadaszvizsga.streamlit.app/ > /dev/null
+        run: curl -sf --max-time 60 -o /dev/null https://vadaszvizsga.streamlit.app/

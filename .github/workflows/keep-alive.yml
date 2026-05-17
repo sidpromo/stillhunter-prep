@@ -8,5 +8,9 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Ping app
         run: curl -sf --max-time 60 -o /dev/null https://vadaszvizsga.streamlit.app/
+      - uses: gautamkrishnar/keepalive-workflow@v2
+        with:
+          time_elapsed: 58

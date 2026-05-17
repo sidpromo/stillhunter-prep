@@ -1,7 +1,7 @@
 name: Keep Alive
 on:
   schedule:
-    - cron: "23 */6 * * *"
+    - cron: "23 */9 * * *"
   workflow_dispatch:
 
 jobs:
@@ -9,8 +9,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Ping app
-        run: curl -sf --max-time 60 -o /dev/null https://vadaszvizsga.streamlit.app/
+
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install chromium --with-deps
+
+      - name: Wake app with headless browser
+        run: |
+          python -c "
+          from playwright.sync_api import sync_playwright
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              page = browser.new_page()
+              page.goto('https://vadaszvizsga.streamlit.app/', wait_until='networkidle', timeout=120000)
+              page.wait_for_timeout(5000)
+              browser.close()
+              print('App is awake')
+          "
+
       - uses: gautamkrishnar/keepalive-workflow@v2
         with:
           time_elapsed: 58
